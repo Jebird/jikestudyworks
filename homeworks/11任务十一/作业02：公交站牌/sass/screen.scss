@@ -1,0 +1,111 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+@import "compass/utilities/general/clearfix";
+
+$pixel10:10px;
+@mixin roundedBox($radius:10px){
+	border-radius:$radius;
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-ms-border-radius:$radius;
+} .main {
+	width:$pixel10*50;
+	height:$pixel10*25;
+	position:absolute;
+	top:50%;
+	margin-top:-$pixel10*12.5;
+	left:50%;
+	margin-left:-$pixel10*25;
+	border:1px solid #fff;
+	@include border-radius(5px); 
+	@include box-shadow(0 0 10px 5px #ccc); 
+}
+
+.top-left {
+	float:left;
+	margin-top:$pixel10*2;
+	.bus-name {
+		background-color:#9B4843;
+		font-size:36px;
+		text-align:center;
+		height:$pixel10*5;
+		width:$pixel10*13;
+		line-height:50px;
+		color:#fff;
+	}
+	.bus-time {
+		margin-top:$pixel10*0.5;
+		font-size:12px;
+	}
+}
+.top-right {
+	float:right;
+	margin-top:$pixel10*2;
+	margin-right:$pixel10*3;
+	text-align:center;
+	.road-section {
+		font-size:16px;
+		color:#028b5f;
+	}
+	.road-english {
+		font-size:12px;
+		margin-top:$pixel10*0.5;
+		color:#028b5f;
+	}
+	.road-now {
+		font-size:24px;
+		font-weight:600;
+		margin-top:$pixel10;
+		color:#EA0000;
+	}
+} 
+
+.middle {
+	@include clearfix;
+	clear:both;
+	padding-top:$pixel10;
+	margin-top:$pixel10*9;
+	background-color:#406b4b;
+	color:#fff;
+	ul{
+		width:$pixel10*50;
+		height:$pixel10*9.5;
+		padding-left:3px;
+		font-size:14px;
+		li {
+			width:$pixel10*2;
+			float:left;
+			margin-left:0.8px;
+		}
+		.choise {
+			color:#EA0000;
+		}
+	}
+}
+.bottom {
+	font-size:14px;
+	text-align:center;
+	position: relative;
+	.vote {
+		padding:10px 0 5px 0;
+		width:400px;
+		margin-left:$pixel10*4;
+		border-bottom:3px solid #EA0000;
+	}
+	.triangle {
+		position:absolute;
+		top:$pixel10*2.4;
+		right:$pixel10*4.5;
+		width:0;
+		height:0;
+		border-left: 0 solid transparent;
+    	border-right: 25px solid transparent;
+    	border-bottom: 8px solid #EA0000;
+	}
+}

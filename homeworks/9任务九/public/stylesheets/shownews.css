@@ -1,0 +1,170 @@
+/*头部的样式*/
+
+.head-info {
+    height: 44px;
+    padding: 0;
+    background-color: #3e98f0;
+    background-image: url(../images/baidu_logo.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    border-bottom: 1px solid #fff;
+}
+
+
+/*百度icon*/
+
+.baidu_icon {
+    text-align: center;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    background-image: url(../images/icons.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+
+/*百度新闻logo*/
+
+.logo {
+    background-position: center 4px;
+}
+
+
+/*任务*/
+
+.person {
+    background-position: center -463px;
+}
+
+
+/*查询*/
+
+.search {
+    background-position: center -162px;
+}
+
+
+/*添加*/
+
+.add {
+    background-position: center -107px;
+}
+
+
+/*导航条*/
+
+.head_nav {
+    padding: 0;
+    background-color: #3e98f0;
+    text-align: center;
+}
+
+.head_nav div {
+    padding: 0;
+    height: 33px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.head_nav div span{
+    font-size: 10px;
+}
+.hddn{
+    display: none;
+}
+
+div.down-triangle{
+    float: right;
+    margin-top: 14px;
+    margin-right: 15px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+
+div.up-triangle{
+    float: right;
+    margin-top: -15px;
+    margin-right: 15px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #fff;
+}
+/*主要内容区域*/
+
+.index-list {
+    position: relative;
+    margin-right: 10px;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    height: 154px;
+    margin: 0 10px;
+}
+
+.index-list h5 {
+    font-size: 100%;
+}
+
+.fit span {
+    position: relative;
+    font-size: 60%;
+}
+
+.fit img {
+    margin-left: -10px;
+    width: 120%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+/*底部的信息条*/
+
+.footing {
+    margin-top: 4px;
+    padding: 0;
+    background-color: #3e98f0;
+    text-align: center;
+    padding-top: 6px;
+    width: 100%;
+    height: 36px;
+    line-height: 22px;
+}
+
+.footing div {
+    padding: 0;
+    border-left: 1px solid #fff;
+}
+
+.footing div.first_none {
+    border: none;
+}
+
+.footing a {
+    width: 100%;
+    height: 16px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 25px;
+    background-image: url(../images/bg-footer.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px 300px;
+}
+
+.footing a.first {
+    background-position: 0 3px;
+}
+
+.footing a.second {
+    background-position: 0 -31px;
+}
+
+.footing a.third {
+    background-position: 0 -64px;
+}

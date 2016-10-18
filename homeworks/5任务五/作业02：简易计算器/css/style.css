@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 */
+html,body {
+    margin: 0;
+    padding: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    height: 400px;
+    width: 400px;
+    text-align: left;
+}
+.wrapper input {
+    height: 20px;
+    outline: none;/*去除默认外边框线*/
+    margin: 5px 0;
+    width: 100px;
+}
+.wrapper select {
+    width: 104px;
+    height: 26px;
+	outline:none;/*去除默认外边框线*/
+	font-size:18px;
+}
+.wrapper button {
+    height: 26px;
+    width: 104px;
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 116px;
+    background-color: #F00;
+    border: 1px solid #f00;
+    outline: none;/*去除默认外边框线*/
+    cursor: pointer;/*鼠标悬停变小手*/
+}
+.wrapper p {
+    margin-left: 28px;
+    line-height: 16px;
+}
+.wrapper p span {
+    color: #F00;
+    font-size: 24px;
+}

@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WEB前端开发面试题</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style-content.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--标题 s -->
+    <nav class="navbar navbar-inverse navbar-fixed-top ama-header">
+        <div class="container">
+            <div class="navbar-header text-left">
+               <a href="http://www.jikexueyuan.com/" target="_blank">
+               	<img src="img/jikexueyuan.png" alt="极客学院logo" height="40"/>
+               </a>
+            </div>
+        </div>
+    </nav>
+    <!--标题 e -->
+    <!--选项切换 s -->
+    <!--<div class="ama-title">
+        <div class="container">
+            <ul class="nav navbar-nav text-center">
+                <li class="thtml">
+                </li>
+                <li class="tcss">
+                </li>
+                <li class="tjs">
+                </li>
+                <li class="tjp">
+                </li>
+                <li class="tajs">
+                </li>
+                <li class="tphp">
+                </li>
+                <li class="tnode">
+                </li>
+            </ul>
+        </div>
+    </div>-->
+    <!--选项切换 e -->
+    <!--内容 s -->
+    <div class="container-fluid ama-menu" style="margin-top:60px;">
+        <div class="row">
+            <!--左侧树状 s -->
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 table-tab">
+                <ul class="nav nav-sidebar">
+                    <li title="d1"><a href="#" target="_self"><i class="glyphicon glyphicon-th"></i><span>初级前端工程师</span></a></li>
+                    <li title="d2" class="active"><a href="#" target="_self"><i class="glyphicon glyphicon-th-large"></i> <span>高级前端工程师</span></a></li>
+                    <li title="d3"><a href="#" target="_self"><i class="glyphicon glyphicon-calendar"></i> <span>资深前端工程师</span></a></li>
+                </ul>
+            </div>
+            <!--左侧树状 e -->
+            <!--列表内容 s -->
+            <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10 table-content">
+            	<div id="d1" style="display:none;">
+	                <div class="tatil">
+	                    <h2>初级前端面试题（HTML+CSS）</h2>
+	                    <p>web前端第8期就业2班  黄鹏</p>
+	                </div>
+	                <div>
+	                	<ul type="none">
+	                    	<li>
+	                        	<h1>1.对WEB标准以及W3C的理解与认识？</h1>
+	                            <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;</p>
+	                        </li>
+	                        <li>
+	                        	<h1>2.XHTML和HTML有什么区别？</h1>
+	                            <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言<br/>最主要的不同：<br/>XHTML 元素必须被正确地嵌套。<br/>XHTML 元素必须被关闭。<br/>标签名必须用小写字母。<br/>XHTML 文档必须拥有根元素。</p>
+	                        </li>
+	                        <li>
+	                        	<h1>3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</h1>
+	                            <p>用于声明文档使用那种规范(HTML/XHTML)一般为 严格 过度 基于框架的html文档加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug</p>
+	                        </li>
+	                        <li>
+	                        	<h1>4.行内元素有哪些?块级元素有哪些?CSS的盒模型?</h1>
+	                            <p>块级元素：div p h1 h2 h3 h4 form ul<br/>行内元素: a b br i span input select<br/>Css盒模型:内容，border ,margin，padding</p>
+	                        </li>
+	                        <li>
+	                        	<h1>5.CSS引入的方式有哪些? link和@import的区别是?</h1>
+	                            <p>内联 内嵌 外链 导入<br/>区别 ：同时加载<br/>前者无兼容性，后者CSS2.1以下浏览器不支持<br/>
+	                            Link 支持使用javascript改变样式，后者不可</p>
+	                        </li>
+	                        <li>
+	                        	<h1>6.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</h1>
+	                            <p>标签选择符 类选择符 id选择符<br/>继承不如指定 Id>class>标签选择<br/>后者优先级高</p>
+	                        </li>
+	                        <li>
+	                        	<h1>7.前端页面有哪三层构成，分别是什么?作用是什么?</h1>
+	                            <p>结构层 HTML 表示层 CSS 行为层 js</p>
+	                        </li>
+	                        <li>
+	                        	<h1>8.CSS的基本语句构成是?</h1>
+	                            <p>选择器{属性1:值1;属性2:值2;……}</p>
+	                        </li>
+	                        <li>
+	                        	<h1>9.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</h1>
+	                            <p>Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)</p>
+	                        </li>
+	                        <li>
+	                        	<h1>10.写出几种IE6 BUG的解决方法</h1>
+	                            <p>1.双边距BUG float引起的 使用display<br/>2.3像素问题 使用float引起的 使用dislpay:inline -3px<br/>3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active<br/>4.Ie z-index问题 给父级添加position:relative<br/>5.Png 透明 使用js代码 改<br/>6.Min-height 最小高度 !Important 解决’<br/>7.select 在ie6下遮盖 使用iframe嵌套<br/>8.为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px)<br/>9.ie 6 不支持!important</p>
+	                        </li>
+	                        <li>
+	                        	<h1>11.img标签上title与alt属性的区别是什么?</h1>
+	                            <p>Alt 当图片不显示是 用文字代表。<br/>Title 为该属性提供信息</p>
+	                        </li>
+	                        <li>
+	                        	<h1>12.描述css reset的作用和用途。</h1>
+	                            <p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+	                        </li>
+	                        <li>
+	                        	<h1>13.解释css sprites，如何使用。</h1>
+	                            <p>Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量</p>
+	                        </li>
+	                        <li>
+	                        	<h1>14.浏览器标准模式和怪异模式之间的区别是什么?</h1>
+	                            <p>盒子模型 渲染模式的不同<br/>使用 window.top.document.compatMode 可显示为什么模式</p>
+	                        </li>
+	                        <li>
+	                        	<h1>15.你如何对网站的文件和资源进行优化?期待的解决方案包括：</h1>
+	                            <p>文件合并<br/>文件最小化/文件压缩<br/>使用CDN托管<br/>缓存的使用</p>
+	                        </li>
+	                        <li>
+	                        	<h1>16.什么是语义化的HTML?</h1>
+	                            <p>直观的认识标签 对于搜索引擎的抓取有好处</p>
+	                        </li>
+	                        <li>
+	                        	<h1>17.清除浮动的几种方式，各自的优缺点</h1>
+	                            <p>1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)<br/>2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)<br/>3.是用afert伪元素清除浮动(用于非IE浏览器)</p>
+	                        </li>
+	                        <li>
+	                        	<h1>18.css hack</h1>
+	                            <p>_marging \\IE 6<br/>+margin \\IE 7<br/>Marging:0 auto \9 所有Ie<br/>Margin \0 \\IE 8</p>
+	                        </li>
+	                    </ul>
+	                </div>
+                </div>
+                <div id="d2">
+                	<div class="tatil">
+	                    <h2>高级前端面试题</h2>
+	                    <p>web前端第8期就业2班  黄鹏</p>
+	                </div>
+	                <div>
+	                	<ul type="none">
+	                    	<li>
+	                    		<h1>1.怎样添加、移除、移动、复制、创建和查找节点？</h1>
+	                            <p>1）创建新节点 createDocumentFragment() //创建一个DOM片段 createElement() //创建一个具体的元素 createTextNode() //创建一个文本节点<br/>2）添加、移除、替换、插入 appendChild() //添加 removeChild() //移除 replaceChild() //替换 insertBefore() //插入<br/>3）查找 getElementsByTagName() //通过标签名称 getElementsByName() //通过元素的Name属性的值 getElementById() //通过元素Id，唯一性</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>2.在Javascript中什么是伪数组？如何将伪数组转化为标准数组？</h1>
+	                            <p>伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>3.Javascript中callee和caller的作用？</h1>
+	                            <p>caller是返回一个对函数的引用，该函数调用了当前函数；<br/>callee是返回正在被执行的function函数，也就是所指定的function对象的正文。</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>4.请描述一下cookies，sessionStorage和localStorage的区别</h1>
+	                            <p>sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。<br/>web storage和cookie的区别<br/>Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>5.一次完整的HTTP事务是怎样的一个过程？</h1>
+	                            <p>基本流程： a. 域名解析 b. 发起TCP的3次握手 c. 建立TCP连接后发起http请求 d. 服务器端响应http请求，浏览器得到html代码 e. 浏览器解析html代码，并请求html代码中的资源 f. 浏览器对页面进行渲染呈现给用户</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>6.JavaScript实现二分法查找</h1>
+	                            <p>二分法查找，也称折半查找，是一种在有序数组中查找特定元素的搜索算法。查找过程可以分为以下步骤： （1）首先，从有序数组的中间的元素开始搜索，如果该元素正好是目标元素（即要查找的元素），则搜索过程结束，否则进行下一步。 （2）如果目标元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半区域查找，然后重复第一步的操作。 （3）如果某一步数组为空，则表示找不到目标元素</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>7.你所了解到的Web攻击技术</h1>
+	                            <p>（1）XSS（Cross-Site Scripting，跨站脚本攻击）：指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或者JavaScript进行的一种攻击。 <br/>（2）SQL注入攻击 <br/>（3）CSRF（Cross-Site Request Forgeries，跨站点请求伪造）：指攻击者通过设置好的陷阱，强制对已完成的认证用户进行非预期的个人信息或设定信息等某些状态更新</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>8.你如何对网站的文件和资源进行优化?期待的解决方案</h1>
+	                            <p>文件合并<br/>文件最小化/文件压缩<br/>使用CDN托管<br/>缓存的使用</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>9.javascript的typeof返回哪些数据类型</h1>
+	                            <p>Object number function boolean underfind</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>10.例举3种强制类型转换和2种隐式类型转换?</h1>
+	                            <p>强制（parseInt,parseFloat,number）<br/>隐式（== – ===）</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>11.split() join() 的区别</h1>
+	                            <p>前者是切割成数组的形式，后者是将数组转换成字符串</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>12.数组方法pop() push() unshift() shift()</h1>
+	                            <p>Push()尾部添加 pop()尾部删除<br/>Unshift()头部添加 shift()头部删除</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>13.IE和DOM事件流的区别</h1>
+	                            <p>1.执行顺序不一样<br/>2.参数不一样<br/>3.事件加不加on<br/>4.this指向问题</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>14.IE和标准下有哪些兼容性的写法</h1>
+	                            <p>Var ev = ev || window.event<br/>document.documentElement.clientWidth || document.body.clientWidth<br/>Var target = ev.srcElement||ev.target
+</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>15.ajax请求的时候get 和post方式的区别</h1>
+	                            <p>一个在url后面 一个放在虚拟载体里面<br/>有大小限制<br/>安全问题<br/>应用不同 一个是论坛等只需要请求的，一个是类似修改密码的</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>16.call和apply的区别</h1>
+	                            <p>Object.call(this,obj1,obj2,obj3)<br/>Object.apply(this,arguments)</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>17.ajax请求时，如何解释json数据</h1>
+	                            <p>使用eval parse 鉴于安全性考虑 使用parse更靠谱</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>18.事件委托是什么</h1>
+	                            <p>让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！<br/>http://www.webasily.com/?p=78 例子可见此链接</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>19.闭包是什么，有什么特性，对页面有什么影响</h1>
+	                            <p>闭包就是能够读取其他函数内部变量的函数。<br/>http://blog.csdn.net/gaoshanwudi/article/details/7355794 此链接可查看</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>20.如何阻止事件冒泡和默认事件</h1>
+	                            <p>canceBubble return false</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>21.添加 删除 替换 插入到某个接点的方法</h1>
+	                            <p>obj.appendChidl()<br/>obj.innersetBefore<br/>obj.replaceChild<br/>obj.removeChild</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>22.解释jsonp的原理，以及为什么不是真正的ajax</h1>
+	                            <p>动态创建script标签，回调函数<br/>Ajax是页面无刷新请求数据操作</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>23.javascript的本地对象，内置对象和宿主对象</h1>
+	                            <p>本地对象为array obj regexp等可以new实例化,内置对象为gload Math 等不可以实例化的,宿主为浏览器自带的document,window 等</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>24.document load 和document ready的区别</h1>
+	                            <p>Document.onload 是在结构和样式加载完才执行js<br/>Document.ready原生种没有这个方法，jquery中有 $().ready(function)</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>25.”==”和“===”的不同</h1>
+	                            <p>前者会自动转换类型，后者不会</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>26.javascript的同源策略</h1>
+	                            <p>一段脚本只能读取来自于同一来源的窗口和文档的属性，这里的同一来源指的是主机名、协议和端口号的组合</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>27.Node.js的适用场景？</h1>
+	                            <p>高并发、聊天、实时消息推送</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>28.Javascript如何实现继承？</h1>
+	                            <p>通过原型和构造器</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>29.谈谈This对象的理解</h1>
+	                            <p>
+this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。<br/>但是有一个总原则，那就是this指的是调用函数的那个对象。<br/>this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>30.事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</h1>
+	                            <p>1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。<br/>2. 事件处理机制：IE是事件冒泡、火狐是 事件捕获;<br/>3. ev.stopPropagation();</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>31.new操作符具体干了什么呢?</h1>
+	                            <p>1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。<br/> 2、属性和方法被加入到 this 引用的对象中。<br/>3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>32.Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</h1>
+	                            <p>hasOwnProperty </p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>33.JSON 的了解？</h1>
+	                            <p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小 {'age':'12', 'name':'back'} </p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>34.js延迟加载的方式有哪些？</h1>
+	                            <p>defer和async、动态创建DOM方式（用得最多）、按需异步载入js</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>35.如何解决跨域问题?</h1>
+	                            <p>jsonp、 iframe、window.name、window.postMessage、服务器上设置代理页面</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>36.Jquery与jQuery UI 有啥区别？</h1>
+	                            <p>jQuery是一个js库，主要提供的功能是选择器，属性修改和事件绑定等等。<br/>jQuery UI则是在jQuery的基础上，利用jQuery的扩展性，设计的插件。  提供了一些常用的界面元素，诸如对话框、拖动行为、改变大小行为等等</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>37.针对 jQuery 的优化方法？</h1>
+	                            <p>基于Class的选择性的性能相对于Id选择器开销很大，因为需遍历所有DOM元素。<br/>频繁操作的DOM，先缓存起来再操作。用Jquery的链式调用更好</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>38.那些操作会造成内存泄漏？</h1>
+	                            <p>内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>39.对Node的优点和缺点提出了自己的看法？</h1>
+	                            <p>（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，   因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。    此外，与Node代理服务器交互的客户端代码是由javascript语言编写的，   因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。<br/>（缺点）Node是一个相对新的开源项目，所以不太稳定，它总是一直在变，   而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。</p>
+	                    	</li>
+	                    	<li>
+	                    		<h1>40.http状态码有那些？分别代表是什么意思？</h1>
+	                            <p>100-199 用于指定客户端应相应的某些动作。<br/>200-299 用于表示请求成功。<br/>300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。<br/>  
+400-499 用于指出客户端的错误。400    1
+、语义有误，当前请求无法被服务器理解。401   当前请求需要用户验证 403  服务器已经理解请求，但是拒绝执行它。<br/> 500-599 用于支持服务器错误。 503 – 服务不可用</p>
+	                    	</li>
+	                    </ul>
+	                </div>
+	            </div>
+                <div id="d3" class="oldweb">同志仍需努力，敬请期待！！</div>
+        	</div>
+        	<!--列表内容 e -->
+        </div>
+    </div>
+    <!--内容 e -->
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="js/style.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+header .header-logo span:hover {
+    background-color: #0AA770;
+    border: 1px solid #0AA770;
+}
+header .header-tab .innovate {
+    border-top: 2px solid #0aa770;
+}
+header .header-tab .innovate i {
+    color: #0aa770;
+}
+header .header-tab .innovate span {
+    color: #0aa770;
+}
+.hao-body .title {
+    border-top: 2px solid #009c65;
+}
+.hao-body .title .title-left a {
+    color: #009c65;
+}
+.hao-body .title .title-left .left-active {
+    background-color: #009c65;
+}
+.hao-body .content-left .bgimg p {
+    background-color: #0AA770;
+}
+.hao-body .content-right .recom ul .weight {
+    color: #0AA770;
+}

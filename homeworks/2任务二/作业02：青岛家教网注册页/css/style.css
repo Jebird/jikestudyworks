@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(../img/bg_pic.gif);
+    background-repeat: repeat;
+}
+.content {
+    width: 710px;
+    margin: 10px auto;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+}
+
+/* 头部样式 s */
+.header {
+    height: 82px;
+}
+.header-img {
+    height: 100px;
+    width: 180px;
+    padding-left: 29px;
+    float: left;
+}
+.header-img img {
+    height: 76px;
+    width: 180px;
+}
+.header-a {
+    height: 82px;
+    width: 461px;
+    padding-right: 29px;
+    float: left;
+    text-align: right;
+}
+.header-a div {
+    margin-top: 64px;
+}
+.header-a a {
+    color: #FF0099;
+    font-size: 12px;
+    text-decoration: none;
+}
+/* 头部样式 e */
+
+/* 表单样式 s */
+.forme-table {
+    width: 710px;
+    clear: both;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 710px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title p {
+    text-align: center;
+}
+.table {
+    border-right: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    font-size: 12px;
+    margin: auto 35px;
+}
+.state {
+    line-height: 20px;
+    text-align: center;
+    background-image: url(../img/beijin1.gif);
+    background-repeat: repeat;
+}
+.table>tbody>tr>td {
+    border-left: 1px solid #A9A9A9;
+    border-top: 1px solid #A9A9A9;
+}
+.reback {
+    color: #00F;
+}
+.reback:hover,.color-red {
+    color: #F00;
+}
+.table-main td {
+    background-color: #EEE;
+    color: #003399;
+    font-size: 13px;
+    padding: 5px 0 5px 10px;
+    font-weight: bold;
+}
+.td-title {
+    text-align: right;
+}
+.table-content {
+    width: 496px;
+    padding: 2px;
+}
+.color-blue {
+    color: #00F;
+}
+.table-table-tr1 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    color: #000;
+}
+.table-table-tr2 td {
+    margin-top: 5px;
+}
+.table-table-tr2 input {
+    margin: 5px 0;
+}
+.table-table-tr2 {
+    color: #000;
+}
+.tr-submit {
+    height: 90px;
+    text-align: center;
+}
+.tr-submit input {
+    padding: 2px 30px;
+}
+/* 表单样式 e */
+
+/* 底部样式 s */
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+/* 底部样式 e */

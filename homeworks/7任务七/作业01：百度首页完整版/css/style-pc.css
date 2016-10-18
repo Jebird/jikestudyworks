@@ -1,0 +1,660 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 s */
+html,body {
+    margin: 0;
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.bgimg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.wrapper-pc {
+    min-height: 1000px;
+    min-width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+/* 初始化 e */
+
+/* 头部样式 s */
+header {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+header .nav-left {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+header .nav-left a {
+    color: #fff;
+    padding-left: 10px;
+}
+header #skin {
+    text-decoration: underline;
+    cursor: pointer;
+}
+header .nav-left .weather {
+    border-right: 1px solid #fff;
+    text-decoration: none;
+}
+header .nav-left .weather span {
+    padding-right: 5px;
+}
+header .nav-left .weather img {
+    padding-right: 5px;
+    height: 18px;
+    margin-bottom: -5px;
+}
+header .nav-left .weather .environment {
+    color: #FF8000;
+}
+header .nav-right {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 116px;
+}
+header .nav-right a {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+    cursor: pointer;
+}
+header .nav-right a:hover {
+    color: #fff;
+}
+header .nav-right a:hover:visited {
+    color: #fff;
+}
+header .nav-right .more {
+    position: absolute;
+    right: 0;
+    width: 90px;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    background-color: #38f;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+}
+header .nav-right .more:hover {
+    color: #fff;
+}
+
+/* 换背景样式 s */
+.skinchoise {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 12;
+}
+.skinchoise img {
+    height: 120px;
+    margin: 30px 6px;
+    border: 2px solid #fff;
+}
+.skinchoise img:hover {
+    cursor: pointer;
+    border: 2px solid red;
+}
+/* 头部样式 e */
+
+/* 更多产品样式 s */
+.more-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #F9F9FB;
+    text-align: center;
+    z-index: 4;
+    display: none;
+}
+.more-product .more-hover {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    background-color: #F9F9FB;
+}
+.more-product .product-sub {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.more-product .product-sub a {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+}
+.more-product .product-sub a:hover {
+    text-decoration: underline;
+}
+.more-product .sub-first {
+    margin-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+.more-product .sub-last {
+    border-bottom: none;
+    padding-top: 20px;
+}
+/* 头部样式 e */
+
+/* 内容样式 s */
+.content {
+    text-align: center;
+    position: relative;
+}
+.content .search img {
+    width: 270px;
+    height: 129px;
+    margin-top: 20px;
+}
+.content .search .photo {
+    position: absolute;
+    top: 12px;
+    left: -30px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(../img/baiduxuebi.png) no-repeat 0 0;
+    /*设置背景图片*/
+}
+.content .search .text {
+    height: 34px;
+    width: 538px;
+    border: none;
+    padding: 3px 0 3px 7px;
+    vertical-align: middle;
+    outline: none;
+    /*去除默认的外边框线*/
+    background-color: #fff;
+}
+.content .search .btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin-left: -3px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #E6E6E6;
+    border: 1px solid #E6E6E6;
+    vertical-align: middle;
+    /*垂直对齐*/
+    cursor: pointer;
+}
+/* tab切换样式 s */
+.content .tab {
+    width: 895px;
+    min-height: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    background-color: #fff;
+    position: relative;
+}
+.content .tab .tab-title {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.content .tab .tab-title ul {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.content .tab .tab-title ul li {
+    list-style-type: none;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.content .tab .tab-title ul li:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+}
+.content .tab .tab-title ul .active {
+    background-color: rgba(250, 250, 250, 0.8);
+    font-weight: 600;
+}
+.content .tab .tab-title ul .active i {
+    font-weight: normal;
+    font-size: 18px;
+    padding-right: 5px;
+}
+.content .tab .tab-title span {
+    float: right;
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.content .tab .tab-title span i {
+    font-size: 18px;
+}
+.content .tab .tab-title span i:hover {
+    color: #00F;
+}
+.content .tab .tab-content {
+    background-color: #fff;
+    position: relative;
+}
+/* 我的关注模块样式 s */
+.mynav {
+    padding: 20px;
+}
+.mynav .mynav-title {
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.mynav .mynav-title span {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.mynav .mynav-title i {
+    font-size: 12px;
+}
+.mynav ul {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.mynav ul li {
+    list-style-type: none;
+    float: left;
+    width: 151px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+}
+.mynav ul li:hover {
+    background-color: #FCFCFC;
+}
+.mynav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.mynav ul li a img {
+    padding-right: 5px;
+    margin-bottom: -2px;
+}
+.mynav .mynav-custom {
+    text-align: left;
+    padding-top: 30px;
+}
+.mynav .mynav-custom a {
+    cursor: pointer;
+    font-size: 14px;
+}
+.mynav .mynav-custom a i {
+    font-size: 20px;
+    padding-right: 2px;
+}
+/* 我的关注模块样式 e */
+
+/* 我的推荐模块样式 s */
+.myrecom {
+    padding: 20px;
+}
+.myrecom .myrecom-left {
+    width: 540px;
+    height: auto;
+}
+.myrecom .myrecom-left .myrecom-left-title {
+    width: 540px;
+    padding-bottom: 20px;
+}
+.myrecom .myrecom-left .hr1 ,.myrecom .myrecom-left i,.myrecom .myrecom-left .myrecom-left-title-content,.myrecom .myrecom-left .hr2 {
+    float: left;
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+}
+.myrecom .myrecom-left .hr1,.myrecom .myrecom-left .hr2 {
+    width: 180px;
+    height: 1px;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+}
+.myrecom .myrecom-left i {
+    padding-left: 5px;
+    font-size: 20px;
+    margin-top: -6px;
+}
+.myrecom .myrecom-left .myrecom-left-title-content {
+    padding: 0 5px;
+}
+.myrecom .myrecom-left-news {
+    width: 540px;
+    text-align: left;
+    padding-top: 10px;
+}
+.myrecom .myrecom-left-news a {
+    text-decoration: none;
+}
+.myrecom .myrecom-left-news-among {
+    border-bottom: 1px solid #f0f0f0;
+}
+.myrecom .myrecom-left-news-among .news-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    ;
+    color: #000;
+}
+.myrecom .myrecom-left-news-among .news-title:hover {
+    color: #00F;
+    text-decoration: underline;
+}
+.myrecom .myrecom-left-news-among img {
+    height: 106px;
+    width: 175px;
+}
+.myrecom .myrecom-left-news-among .news-img2 {
+    padding: 0 4px;
+}
+.myrecom .myrecom-left-news-among .news-from {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999;
+}
+.myrecom .myrecom-left-news-among .news-from a {
+    font-size: 16px;
+    color: #999;
+}
+.myrecom .td-right {
+    position: relative;
+}
+.myrecom .myrecom-right {
+    width: 290px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    text-align: left;
+}
+.myrecom-right-title .now-hot a,.myrecom-right-title .now-hot a:hover {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.myrecom-right-title .hot-refresh a {
+    padding-left: 162px;
+    cursor: pointer;
+}
+.myrecom-right-title .hot-refresh a:hover,.myrecom-right-title .hot-refresh a i:hover {
+    color: #06C;
+}
+.myrecom-right-title .hot-refresh a i {
+    padding-right: 5px;
+    font-size: 18px;
+}
+.myrecom-right-content {
+    padding-top: 20px;
+}
+.myrecom-right-content ul {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+.myrecom-right-content ul li {
+    float: left;
+    width: 140px;
+}
+.myrecom-right-content ul li a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+.myrecom-right-content ul li a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+.myrecom-right-content ul li .hot-new {
+    font-size: 10px;
+    color: #fff;
+    background-color: #F13F40;
+    padding: 2px;
+    margin-left: 3px;
+}
+/* 我的推荐模块样式 e */
+
+/* 我的导航模块样式 s */
+.myins {
+    padding: 20px;
+}
+.myins .myins-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+.myins ul {
+    padding: 0;
+}
+.myins .myins-like li {
+    list-style-type: none;
+    float: left;
+    background-color: #fcfcfc;
+    margin: 8px;
+    position: relative;
+}
+.myins .myins-like li a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    height: 58px;
+    line-height: 58px;
+    width: 124px;
+    text-decoration: none;
+    border: 1px solid #fcfcfc;
+}
+.myins .myins-like li a:hover {
+    border: 1px solid #f0f0f0;
+}
+.myins .myins-like li a img {
+    margin-bottom: -3px;
+    padding-right: 2px;
+}
+.myins .myins-like .myins-like-return {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FF8306;
+    color: #fff;
+    padding: 2px;
+}
+/* 我的导航模块样式 e */
+
+/* 视频模块样式 s */
+.myvideo {
+    padding: 20px;
+}
+.myvideo .myvideo-content {
+    border-bottom: 1px solid #F3F3F3;
+}
+.myvideo .myvideo-content table {
+    padding-bottom: 10px;
+}
+.myvideo tr td {
+    background-color: #F3F3F3;
+    height: 130px;
+    width: 195px;
+}
+.myvideo table tr td a {
+    position: relative;
+    cursor: pointer;
+}
+.myvideo table tr td a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+.myvideo table tr td a p {
+    word-break: break-all;
+    padding: 0 10px;
+    text-align: left;
+    line-height: 20px;
+}
+.myvideo table tr .video-big {
+    font-size: 14px;
+}
+/* 视频模块样式 e */
+
+/* 购物模块样式 s */
+.myshop {
+    padding: 20px;
+}
+.myshop table tr td {
+    height: 265px;
+    width: 195px;
+}
+.myshop table tr td a {
+    position: relative;
+}
+.myshop table tr td a .shop-bgimg {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 175px;
+    height: 65px;
+    background-color: #fff;
+}
+.myshop table tr td a .shop-bgimg .shop-top {
+    font-size: 14px;
+    padding: 12px 2px 5px 2px;
+    margin: 0 5px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.myshop table tr td a .shop-bgimg .shop-bottom {
+    font-size: 14px;
+    padding: 5px 2px 5px 2px;
+    margin: 0 5px;
+}
+.myshop table .shop-toppart,.myshop table .shop-bottompart {
+    text-align: left;
+    font-size: 14px;
+}
+.myshop table .shop-toppart {
+    border-bottom: 1px solid #f3f3f3;
+}
+.myshop table .shop-toppart a,.myshop table .shop-bottompart a {
+    text-decoration: none;
+}
+.myshop table .shop-toppart .shop-title,.myshop table .shop-bottompart .shop-title {
+    font-weight: 600;
+    color: #000;
+}
+.myshop table .shop-toppart .shop-huise {
+    color: #808080;
+    margin: 6px 0 11px;
+}
+.myshop table .shop-lanse {
+    font-size: 12px;
+    color: #0771fb;
+    margin-bottom: 15px;
+}
+.myshop table .shop-lanse:hover,.myshop table table tr td a:hover {
+    text-decoration: underline;
+}
+.myshop table table tr td {
+    width: 80px;
+    height: 30px;
+}
+.myshop table table tr td a {
+    color: #808080;
+}
+.myshop table .shop-bottompart {
+    padding-top: 15px;
+}
+/* 购物模块样式 e */
+/* tab切换样式 e */
+/* 内容样式 e */
+
+/* 返回顶部 s */
+.fadein {
+    position: fixed;
+    bottom: 20px;
+    right: 180px;
+    background-color: rgba(0,0,0,0.5);
+    height: 40px;
+    width: 40px;
+    line-height: 33px;
+    text-align: center;
+    display: none;
+}
+.fadein:hover {
+    cursor: pointer;
+}
+.fadein i {
+    color: #fff;
+    font-size: 30px;
+}
+/* 返回顶部 e */
+
+/* 底部样式 s */
+footer {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 40px;
+    width: 320px;
+    height: 60px;
+    overflow: hidden;
+    -width: 100%;
+    /* IE6 */
+    +width: 100%;
+    /* IE7 */
+}
+footer table {
+    width: 320px;
+    height: 60px;
+    color: #FFF;
+}
+footer table a {
+    color: #FFF;
+}
+footer table .td1 {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+footer table .td2 {
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+/* 底部样式 e */

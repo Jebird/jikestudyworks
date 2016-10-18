@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;}
+.content {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+    -webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+.cube {
+    -webkit-animation: 5s cube linear infinite; /* 控制魔方cube以5秒的速度循环转动 */
+	-moz-animation: 5s cube linear infinite;
+	-ms-animation: 5s cube linear infinite;
+    animation: 5s cube linear infinite;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d; /* 规定以3D视角*/
+	-moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 80px 80px 0;
+    -moz-transform-origin: 80px 80px 0;
+    -ms-transform-origin: 80px 80px 0;
+    transform-origin: 80px 80px 0;
+	behavior: url(../css/ie-css3.htc);
+}
+.back,.bottom,.front,.left,.right,.top {
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    height: 160px;
+    position: absolute;
+    width: 160px;
+}
+table {
+    height: 160px;
+    width: 160px;
+}
+td {
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px;
+    border: 1px solid #006;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+    border-radius: 10px;
+	behavior: url(../css/ie-css3.htc);
+}
+img {
+    text-align: center;
+    height: 40px;
+}
+.back {
+    -webkit-transform: rotateX(180deg) translateZ(80px);
+	-moz-transform: rotateX(180deg) translateZ(80px);
+    -ms-transform: rotateX(180deg) translateZ(80px);
+    transform: rotateX(180deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.back td {
+    background-color: #1B4379;
+    border: #1B4379 1px solid;
+}
+.bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(80px);
+	-moz-transform: rotateX(-90deg) translateZ(80px);
+    -ms-transform: rotateX(-90deg) translateZ(80px);
+    transform: rotateX(-90deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.bottom td {
+    background-color: #03C;
+    border: #03C 1px solid;
+}
+.front {
+    -webkit-transform: rotateY(0deg) translateZ(80px);
+	-moz-transform: rotateY(0deg) translateZ(80px);
+    -ms-transform: rotateY(0deg) translateZ(80px);
+    transform: rotateY(0deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.front td {
+    background-color: #FF0000;
+    border: #FF0000 1px solid;
+}
+.left {
+    -webkit-transform: rotateY(-90deg) translateZ(80px);
+	-moz-transform: rotateY(-90deg) translateZ(80px);
+    -ms-transform: rotateY(-90deg) translateZ(80px);
+    transform: rotateY(-90deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.left td {
+    background-color: #EF8806;
+    border: #EF8806 1px solid;
+}
+.right {
+    -webkit-transform: rotateY(90deg) translateZ(80px);
+	-moz-transform: rotateY(90deg) translateZ(80px);
+    -ms-transform: rotateY(90deg) translateZ(80px);
+    transform: rotateY(90deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.right td {
+    background-color: #016901;
+    border: #016901 1px solid;
+}
+.top {
+    -webkit-transform: rotateX(90deg) translateZ(80px);
+	-moz-transform: rotateX(90deg) translateZ(80px);
+    -ms-transform: rotateX(90deg) translateZ(80px);
+    transform: rotateX(90deg) translateZ(80px);
+	behavior: url(../css/ie-css3.htc);
+}
+.top td {
+    background-color: #EBEBEB;
+    border: #EBEBEB 1px solid;
+}
+
+/* 控制魔方转动 s */
+@-webkit-keyframes cube
+{
+    from
+    {
+        -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+    
+    to
+    {
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+}
+@-moz-keyframes cube
+{
+    from
+    {
+        -moz-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+    
+    to
+    {
+        -moz-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+}
+@-ms-keyframes cube
+{
+    from
+    {
+        -ms-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+    
+    to
+    {
+        -ms-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+}
+@keyframes cube
+{
+    from
+    {
+        -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+    
+    to
+    {
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+		behavior: url(../css/ie-css3.htc);
+    }
+}

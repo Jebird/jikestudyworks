@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 */
+html,body {
+    margin: 0;
+    padding: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    height: 200px;
+    width: 430px;
+    text-align: left;
+}
+.wrapper p {
+	color:#666;
+	margin-top:-10px;	
+}
+.wrapper input {
+    height: 30px;
+	width: 100px;
+    outline: none;/*去除默认外边框线*/
+    margin: 5px 0;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	font-size:24px;
+	color:#F00;
+}
+

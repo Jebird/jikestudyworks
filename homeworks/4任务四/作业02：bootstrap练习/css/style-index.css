@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化样式 s*/
+body {
+	margin:0;
+	padding:0;
+	background:#fff url(../img/bg.png);
+	font-family:Arial, Helvetica, sans-serif;}
+.padd-top-10 {
+	padding-top:10px;}
+.padd-top-bottom-10 {
+	padding:10px 0;}
+.padd-top-bottom-20 {
+	padding:20px 0;}
+.margin-top-bottom-10 {
+	margin:10px 0;}
+.margin-top-bottom-20 {
+	margin:20px 0;}
+/*初始化样式 e*/
+
+/* 内容样式 s*/
+.form-signinbox {
+	width:350px;
+	padding:5px;
+	background-color:#fff;
+	margin:7% auto 0 auto;
+	-webkit-border-radius:2px;
+	border-radius:2px;}
+.form-signinbox .form-signininner {
+	padding:20px;
+	background:#32415a url(../img/bg.png);
+	-webkit-border-radius:0 0 2px 2px;
+	border-radius:0 0 2px 2px;}
+.form-signinbox .form-signininner .h2 {
+	border-bottom:1px solid #56647d;}
+.form-signinbox .form-signininner .h2-white {
+	color:#fff;}
+.form-signinbox .form-signininner .h2-orange {
+	color:#FF8040;}
+.form-signinbox .form-signininner h1 {
+	color:#666;
+	font-size:14px;}
+.form-inline .checkbox {
+	color:#fff;}
+/* 内容样式 e*/

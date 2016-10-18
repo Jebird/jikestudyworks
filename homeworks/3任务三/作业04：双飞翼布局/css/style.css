@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 头部样式 s */
+.head {
+	width:100%;
+	height:50px;
+	background-color:#960;}
+/* 头部样式 e */
+
+/* 内容样式 s */
+.content {
+	overflow:hidden;
+	width:100%;}
+.content .middle {
+	width:100%;
+	float:left;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+	overflow:hidden;}
+.content .middle .inner {
+	padding-left:210px;
+	padding-right:210px;}
+.content .middle .inner .inner-inner {
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	padding:20px;}
+.content .middle .inner h1 {
+	font-size:28px;
+	color:#f16e50;
+	padding:20px;
+	text-align:center;}
+.content .middle .inner p {
+	text-indent:2em;
+	font-size:16px;
+	line-height:26px;}
+.content .left {
+	width:200px;
+	background-color:#fff;
+	float:left;
+	margin-left:-100%;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;}
+.content .left img {
+	width:200px;
+	padding-top:131px;}
+.content .right {
+	width:200px;
+	background-color:#fff;
+	float:left;
+	margin-left:-200px;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;}
+.content .right img {
+	width:200px;
+	padding-top:131px;}
+/* 内容样式 e */
+
+/* 脚部样式 s */
+.footer {
+	width:100%;
+	height:60px;
+	background-color:#999;} 
+/* 脚部样式 e */

@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 */
+html,body {
+    margin: 0;
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+    height: 100%;}
+.wrapper-pc {
+    min-height: 500px;
+    min-width: 768px;
+    position: relative;
+    height: 100%;
+	overflow:hidden;}
+@media screen and (min-width: 768px) { /*当屏幕尺寸大于768px时，应用该CSS样式*/
+  .wrapper-pc {
+    min-width: 800px;}
+  .wrapper-phone {
+	  display:none;}
+}
+/* 头部样式 s */
+header {
+    overflow: hidden;}
+header nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;}
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    float: left;}
+header nav a:hover {
+    color: #00c;}
+header nav a:hover:visited {
+    color: #333;}
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    background-color: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;}
+header nav .more:hover {
+    color: #fff;}
+
+/* 头部样式 e */
+
+/* 内容样式 s */
+.content {
+    text-align: center;
+    position: relative;
+    top: 38.2%;
+    height: 191px;}
+.content .search {
+    position: relative;
+    height: 191px;
+    top: -191px;}
+.content img {
+    width: 270px;
+    height: 129px;}
+.content .text {
+    height: 28px;
+    width: 538px;
+    border: 1px solid #ddd;
+    padding: 3px 0 3px 7px;
+    vertical-align: middle;}
+.content .text:hover {
+    border-color: #999 transparent #b3b3b3 #999;}
+.content .text:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+	outline:none;}
+.content .btn {
+    height: 36px;
+    width: 100px;
+    margin: -5px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;}
+.content .btn:hover {
+    background-color: #317ef3;}
+/* 内容样式 e */
+
+/* 底部样式 s */
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 40px;
+    width: 640px;
+    height: 60px;
+    overflow: hidden;
+    -width: 100%;
+    /* IE6 */
+    +width: 100%;
+    /* IE7 */}
+footer table {
+    width: 640px;
+    height: 60px;
+    color: #7B7B7B;}
+footer table a {
+    color: #7B7B7B;}
+footer table .td1 {
+    padding-top: 10px;
+    padding-right: 20px;}
+footer table .td2 {
+    padding-bottom: 10px;
+    padding-right: 20px;}
+/* 底部样式 e */

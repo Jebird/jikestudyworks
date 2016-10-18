@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>作业2：简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+</head>
+<body>
+    <div class="wrapper">
+    	<div>
+          <span>请输入第一个数：</span>
+          <input type="text" id="x" value=""/>
+        </div>
+        <div>
+          <span>请您选择操作符：</span>
+          <select id="oper">
+              <option>+</option>
+              <option>-</option>
+              <option>*</option>
+              <option>/</option>
+          </select>
+        </div>
+        <div>
+          <span>请输入第二个数：</span>
+          <input type="text" id="y" value=""/>
+        </div>
+        <div>
+          <button type="button" onClick="result()">=</button>
+        </div>
+        <p>运算结果是：<span id="result"></span></p>
+        <script src="js/style.js" type="text/javascript"></script>
+    </div>
+</body>
+
+</html>

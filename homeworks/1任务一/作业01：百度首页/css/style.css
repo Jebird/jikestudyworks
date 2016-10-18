@@ -1,0 +1,8 @@
+body {text-align:center; margin:0; padding:0;}
+img { width:270px; height:129px}
+.title {margin-top:30px; margin-right:68px}
+.title a { text-decoration:none; color:#000} 
+.title_choose {color:#000; font-weight:bold}
+.content {margin-left:386px; margin-top:10px}
+.text {height:34px; width:533px; float:left; margin-right:-1px}
+.button {height:40px; width:104px; font-size:16px; float:left}

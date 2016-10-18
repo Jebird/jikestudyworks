@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化样式 s*/
+body {
+	margin:0;
+	padding:0;
+	background:#666 url(../img/bg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	min-width:800px;
+	min-height:800px;}
+.padd-top-10 {
+	padding-top:10px;}
+.padd-top-bottom-10 {
+	padding:10px 0;}
+.padd-top-bottom-20 {
+	padding:20px 0;}
+.margin-top-bottom-10 {
+	margin:10px 0;}
+.margin-top-bottom-20 {
+	margin:20px 0;}
+/*初始化样式 e*/
+
+/* 内容样式 s*/
+
+/* 标题样式 s*/
+.ama-header {
+	background:#34445e url(../img/topheaderbg.png);
+	border-bottom:1px solid #303f59;
+	height:60px;
+	line-height:40px;}
+.navbar-header h2 {
+	height:60px;
+	line-height:20px;
+	padding:0 10px;}
+.navbar-header i {
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding:0 10px;
+	margin:10px 0;
+	color:#6a778d;
+	border-left:1px solid #606d84;}
+.navbar .navbar-header .orange {
+	color:#FF8040;}
+.navbar .navbar-header .white {
+	color:#FFF;}
+.search input {
+	border:none;
+	padding:10px 8px;
+	background-color:#32415a;
+	color:#4a5b78;
+	border-bottom:1px solid #445775;
+	font-style:italic;
+	-webkit-box-shadow:inset 1px 1px 2px #2b384e;
+	box-shadow:inset 1px 1px 2px #2b384e;
+	font-size:12px;}
+.search input:focus {
+	border:none;
+	border-bottom:1px solid #445775;}
+.search button {
+	border:none;
+	border-bottom:1px solid #445775;
+	cursor:pointer;
+	-webkit-border-radius:0 0 2px 0;
+	border-radius:0 0 2px 0;
+	background-color:#29354A;
+	color:#415169;
+	margin-left:-10px;} 
+/* 标题样式 e*/
+
+/* 选项切换样式 s*/
+.ama-title {
+	margin-top:60px;
+	background:#485b79 url(../img/headerbg.png);
+	overflow:hidden;
+	border-bottom:5px solid #fb9337;
+	-webkit-box-shadow:inset 0 1px 0 #50627f;
+	box-shadow:inset 0 1px 0 #50627f;}
+.ama-title ul li {
+	border-right:1px solid #576a85;}
+.ama-title ul i {
+	font-size:24px;
+	color:#9AA3B2;}
+.ama-title ul p {
+	color:#fff;
+	padding-top:10px;}
+.ama-title ul .active {
+	background:#445671 url(../img/headerbg.png);}
+.ama-title ul a:hover {
+	background:#445671 url(../img/headerbg.png);}
+/* 选项切换样式 e*/
+
+/* 左侧菜单样式 s*/
+.ama-menu {
+	background-color:#fff;}
+.ama-menu .table-tab {
+	padding:0;}
+.ama-menu li {
+	height:50px;
+	line-height:30px;
+	border-bottom:1px solid #eee;}
+.ama-menu li a {
+	color:#32415a;}
+.ama-menu li a i {
+	padding-right:10px;
+	font-size:14px;
+	color:#9AA3B2;}
+.ama-menu .active a {
+	color:#fb9337;
+	background-color:#F7F7F7;}
+.ama-menu a:hover {
+	color:#fb9337;
+	background-color:#F7F7F7;}
+/* 左侧菜单样式 e*/
+
+/* 表格内容样式 s*/
+.table-content {
+	background-color:transparent;
+	border-left:1px solid #BBB;
+	padding:0;}
+.table-content .tatil {
+	border-bottom:1px solid #BBB;
+	padding:10px;}
+.table-content .tatil h2 {
+	color:#485b79;}
+.table-content .tatil p {
+	color:#666;}
+.table-content h4 {
+	padding:40px 10px 10px 10px;}
+.table-content h4 span {
+	padding-bottom:3px;
+	border-bottom:2px solid #fb9337;}
+.table-content table {
+	padding:0 10px;}
+.table-content table ul {
+	margin:0;
+	padding-top:5px;
+	font-size:12px;}
+.table-content table ul .active a {
+	color:#fff;
+	background-color:#F0882C;
+	border:1px solid #F0882C;}
+/* 表格内容样式 e*/
+
+/* 内容样式 e*/

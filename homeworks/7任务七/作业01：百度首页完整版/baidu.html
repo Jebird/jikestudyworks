@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>作业3：百度首页</title>
+<!--当屏幕尺寸大于768px时，选用style-pc 文件-->
+<link rel="stylesheet" type="text/css" href="css/style-pc.css">
+<link rel="shortcut icon" href="img/favicon.ico">
+<!--当屏幕尺寸小于768px时，选用style-phone 文件-->
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<img src="img/4.jpg" class="bgimg" id="bgimg"/> <!--使用换肤方法-->
+<!-- PC端代码 s -->
+<div class="wrapper-pc"> 
+  <!-- 头部 s -->
+  <header>
+    <div class="nav-left"> <a href="" target="_self" class="weather"> <span>北京：</span><img src="img/tian.png" height="18" /><span>27℃</span><span class="environment">重度</span><span>209</span> </a> <a href="https://www.baidu.com/#" target="_self">宝箱</a> <a target="_self" id="skin" style="color:red;">换肤</a> <a href="https://www.baidu.com/#" target="_self">消息</a> </div>
+    <div class="nav-right"> <a href="http://www.nuomi.com/?cid=002540" target="_self">糯米</a> <a href="http://news.baidu.com" target="_self">新闻</a> <a href="http://www.hao123.com/" target="_self">hao123</a> <a href="http://map.baidu.com/" target="_self">地图</a> <a href="http://v.baidu.com/" target="_self">视频</a> <a href="http://tieba.baidu.com/" target="_self">贴吧</a> <a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" target="_self">兂腳袅</a> <a href="http://www.baidu.com/gaoji/preferences.html" target="_self">设置</a> <a class="more" id="more">更多产品</a> </div>
+    <div class="more-product" id="more-product">
+      <div class="more-hover">更多产品</div>
+      <div class="product-sub sub-first"><a href="http://music.baidu.com/" target="_blank"><img src="img/music.png" />
+        <div>音乐</div>
+        </a></div>
+      <div class="product-sub"><a href="http://image.baidu.com/" target="_blank"><img src="img/image.png" />
+        <div>图片</div>
+        </a></div>
+      <div class="product-sub"><a href="http://zhidao.baidu.com/" target="_blank"><img src="img/zhidao.png" />
+        <div>知道</div>
+        </a></div>
+      <div class="product-sub"><a href="http://wenku.baidu.com/" target="_blank"><img src="img/wenku.png" />
+        <div>文库</div>
+        </a></div>
+      <div class="product-sub"><a href="http://top.baidu.com/" target="_blank"><img src="img/bang.png" />
+        <div>百度风云榜</div>
+        </a></div>
+      <div class="product-sub"><a href="http://e.baidu.com/" target="_blank"><img src="img/tuiguang.png" />
+        <div>百度推广</div>
+        </a></div>
+      <div class="product-sub sub-last"><a href="http://www.baidu.com/more/" target="_blank">全部产品<span>>></span></a></div>
+    </div>
+    <div id="skinChoise" class="skinchoise"><!--使用展现皮肤选择方法-->
+    	<img src="img/1.jpg" />
+        <img src="img/2.jpg" />
+        <img src="img/3.jpg" />
+        <img src="img/4.jpg" />
+        <img src="img/5.jpg" />
+        <img src="img/6.jpg" />
+    </div>
+  </header>
+  <!-- 头部 e --> 
+  <!-- 内容 s -->
+  <div class="content">
+    <!-- 搜索 s -->
+    <div class="search"> <img src="img/logo_white.png" alt="百度logo" />
+      <form>
+        <input name="input" type="text" value="" class="text" autofocus>
+        <button type="submit" class="btn">百度一下<span class="photo"></span></button>
+      </form>
+    </div>
+    <!-- 搜索 s --> 
+    <!-- 切换内容 s -->
+    <div class="tab">  
+      <!-- 切换内容标题 s -->
+      <div class="tab-title">
+        <ul>
+          <li title="d1"><i class="icon iconfont">&#xe603;</i>我的关注</li>
+          <li class="active" title="d2">推荐</li>
+          <li title="d3">导航</li>
+          <li title="d4">视频</li>
+          <li title="d5">购物</li>
+        </ul>
+        <span><i class="icon iconfont">&#xe60a;</i></span> </div>
+      <!-- 切换内容标题 e --> 
+      <!-- 切换详细内容 s --> 
+      <div class="tab-content">
+      	<!-- 我的关注内容 s -->
+        <div class="mynav" id="d1" style="display:none">
+          <div class="mynav-title"><i class="icon iconfont">&#xe609;</i><span>我的导航</span></div>
+          <div>
+            <ul>
+              <li><a href="" target="_blank"><img src="img/95486.png"/>百度一下</a></li>
+              <li><a href="" target="_blank"><img src="img/9762.png"/>三国杀</a></li>
+              <li><a href="" target="_blank"><img src="img/95475.png"/>京东</a></li>
+              <li><a href="" target="_blank"><img src="img/95487.png"/>淘宝</a></li>
+              <li><a href="" target="_blank"><img src="img/95488.png"/>新浪微博</a></li>
+            </ul>
+            <ul>
+              <li><a href="" target="_blank"><img src="img/95489.png"/>优酷视频</a></li>
+              <li><a href="" target="_blank"><img src="img/95490.png"/>hao123</a></li>
+              <li><a href="" target="_blank"><img src="img/95493.png"/>亚马逊</a></li>
+              <li><a href="" target="_blank"><img src="img/95496.png"/>新浪新闻</a></li>
+              <li><a href="" target="_blank"><img src="img/95500.png"/>天猫</a></li>
+            </ul>
+            <ul>
+              <li><a href="" target="_blank"><img src="img/95503.png"/>土豆视频</a></li>
+              <li><a href="" target="_blank"><img src="img/95515.png"/>音悦台</a></li>
+              <li><a href="" target="_blank"><img src="img/95552.png"/>火影忍者</a></li>
+            </ul>
+          </div>
+          <div class="mynav-custom"> <a><i class="icon iconfont">&#xe606;</i><span>自定义</span></a> </div>
+        </div>
+        <!-- 我的关注内容 e -->
+        <!-- 我的推荐内容 s -->
+        <div class="myrecom" id="d2"> 
+          <table>
+            <tr>
+              <td>
+                <div class="myrecom-left">
+                  <div class="myrecom-left-title"> <span class="hr1"></span> <i class="icon iconfont">&#xe601;</i><span class="myrecom-left-title-content">以下信息根据您的兴趣推荐</span> <span class="hr2"></span> </div>
+                  <div class="myrecom-left-news">
+                    <div class="myrecom-left-news-among"> 
+                      <a href="http://www.guancha.cn/military-affairs/2016_04_25_358069.shtml" target="_blank">
+                        <div class="news-title">台湾“天价”牛肉面：最贵的一碗卖2000元</div>
+                        <div> <img src="img/u=1476564062,2851053781&fm=80.jpg"/> <img src="img/u=1520365523,2406125026&fm=80.jpg" class="news-img2"/> <img src="img/u=1653263434,3189620284&fm=80.jpg"/> </div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">搜狐文化</a><span> 04-21 13:07</span></div>
+                    </div>
+                    <div class="myrecom-left-news-among"> 
+                      <a href="http://www.guancha.cn/military-affairs/2016_04_25_358069.shtml" target="_blank">
+                        <div class="news-title">ISIS称击落叙军战机 叙政府称系故障坠毁</div>
+                        <div> <img src="img/u=2140371654,232761465&fm=80.jpg"/> <img src="img/u=2288191852,465149793&fm=80.jpg" class="news-img2"/> <img src="img/u=2411125977,740170488&fm=80.jpg"/> </div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">中国日报网</a><span> 04-21 13:07</span></div>
+                    </div>
+                    <div class="myrecom-left-news-among"> 
+                      <a href="http://cnews.chinadaily.com.cn/2016-04/24/content_24799788.htm" target="_blank">
+                        <div class="news-title">丈夫出轨贤惠"小三" 妻子与2名小鲜肉玩暧昧</div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">中国日报网</a><span> 04-21 13:07</span></div>
+                    </div>
+                    <div class="myrecom-left-news-among"> 
+                      <a href="http://cnews.chinadaily.com.cn/2016-04/25/content_24813296.htm" target="_blank">
+                        <div class="news-title">甄嬛传七大童星现状 胧月温宜都成小美女</div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">凤凰科技</a><span> 04-21 13:07</span></div>
+                    </div>
+                     <div class="myrecom-left-news-among"> 
+                      <a href="http://learning.sohu.com/20160422/n445541756.shtml" target="_blank">
+                        <div class="news-title">孩子全班倒数，父亲只说了一句话</div>
+                        <div> <img src="img/u=166365593,303262885&fm=80.jpg"/> <img src="img/u=3474251489,3531142411&fm=80.jpg" class="news-img2"/> <img src="img/u=4115029937,2340458683&fm=80.jpg"/> </div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">搜狐文化</a><span> 04-21 13:07</span></div>
+                    </div>
+                     <div class="myrecom-left-news-among"> 
+                      <a href="http://tech.ifeng.com/a/20160425/41599217_0.shtml" target="_blank">
+                        <div class="news-title">HTC Vive体验：满足消费者对VR的所有向往</div>
+                        <div> <img src="img/u=2057073701,2340564567&fm=80.jpg"/> <img src="img/u=4107103608,3202230793&fm=80.jpg" class="news-img2"/> <img src="img/u=3125653155,2986734942&fm=80.jpg"/> </div>
+                      </a>
+                      <div class="news-from"><a href="" target="_blank">搜狐时尚</a><span> 04-21 13:07</span></div>
+                    </div>
+                  </div>
+                </td>
+              <td class="td-right">
+              	<div class="myrecom-right">
+                	<div class="myrecom-right-title">
+                    	<span class="now-hot"><a href="http://top.baidu.com/?fr=mhd_card" target="_blank">实时热点</a></span>
+                        <span class="hot-refresh"><a><i class="icon iconfont">&#xe60e;</i>换一换</a></span>
+                    </div>
+                    <div class="myrecom-right-content">
+                    	<ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%87%8E%E7%94%9F%E8%91%9B%E6%A0%B9250%E6%96%A4&rsv_idx=2" target="_blank">野生葛根250斤</a><span class="hot-new">新</span></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E7%BA%A2%E6%A5%BC%E6%A2%A6%E6%99%B4%E9%9B%AF%E6%99%92%E8%BF%91%E7%85%A7&rsv_idx=2" target="_blank">红楼梦晴雯晒近照</a><span class="hot-new">新</span></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E8%B5%A4%E5%B3%B0%E5%8F%91%E7%94%9F%E5%91%BD%E6%A1%88&rsv_idx=2" target="_blank">赤峰发生命案</a><span class="hot-new">新</span></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E8%8B%B1%E5%B0%8F%E7%8E%8B%E5%AD%90%E4%BC%9A%E5%A5%A5%E5%B7%B4%E9%A9%AC&rsv_idx=2" target="_blank">英小王子会奥巴马</a><span class="hot-new">新</span></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9D%8E%E7%8E%9F%E6%9A%82%E5%81%9C%E5%B7%A5%E4%BD%9C&rsv_idx=2" target="_blank">李玟暂停工作</a><span class="hot-new">新</span></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E8%8F%B2%E5%88%A9%E6%99%AE%E4%BA%B2%E7%8E%8B%E7%A7%80%E8%BD%A6%E6%8A%80&rsv_idx=2" target="_blank">菲利普亲王秀车技</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%82%A3%E7%99%8C%E5%A5%B3%E5%AD%90%E6%8B%92%E6%94%B6%E6%8D%90%E6%AC%BE&rsv_idx=2" target="_blank">患癌女子拒收捐款</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E4%B8%AD%E5%9B%BD%E6%B5%B7%E8%AD%A6%E7%BC%96%E9%98%9F%E5%B7%A1%E8%88%AA&rsv_idx=2" target="_blank">中国海警编队巡航</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%AB%98%E6%A0%A1%E5%8D%AB%E6%98%9F%E6%AD%A3%E5%BC%8F%E8%90%BD%E6%88%90&rsv_idx=2" target="_blank">高校卫星正式落成</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%8A%A5%E5%BA%9F%E9%BB%91%E6%A0%A1%E8%BD%A6%E8%B6%85%E5%91%98&rsv_idx=2" target="_blank">报废黑校车超员</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%BC%A0%E5%AD%90%E8%90%B1%E6%97%A5%E6%9C%AC%E5%87%BA%E6%B8%B8&rsv_idx=2" target="_blank">张馨予疑感叹单身</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%82%B3%E5%B7%9E%E7%94%B7%E5%AD%90%E6%8D%85%E6%9D%80%E5%B0%8F%E5%AD%A9&rsv_idx=2" target="_blank">邳州男子捅杀小孩</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%9B%A2%E4%BC%99%E9%AA%971.17%E4%BA%BF%E5%85%83&rsv_idx=2" target="_blank">团伙骗1.17亿元</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%8C%BB%E7%94%9F%E7%B4%AF%E5%80%92%E5%9C%A8%E6%89%8B%E6%9C%AF%E5%8F%B0&rsv_idx=2" target="_blank">医生累倒在手术台</a></li>
+                        </ul>
+                        <ul>
+                        	<li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%B5%B7%E5%8D%97%E6%88%90%E7%AB%8B%E8%88%AA%E5%A4%A9%E9%82%AE%E5%B1%80&rsv_idx=2" target="_blank">海南成立航天邮局</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E9%95%BF%E6%B2%99%E6%89%93%E5%87%BB%E4%BC%AA%E5%9F%BA%E7%AB%99&rsv_idx=2" target="_blank">长沙打击伪基站</a></li>
+                        </ul>
+                    </div>
+              	</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- 我的推荐内容 e -->
+        <!-- 我的导航内容 s -->
+        <div class="myins" id="d3" style="display:none">
+          <div class="myins-content">
+          	<div class="myins-title">猜你喜欢</div>
+          	<ul class="myins-like">
+            	<li><a href="" target="_blank"><img src="img/9483.png" /> 百度糯米</a><span class="myins-like-return">返</span></li>
+                <li><a href="" target="_blank"><img src="img/95475.png" /> 京东商城</a><span class="myins-like-return">返</span></li>
+                <li><a href="" target="_blank"><img src="img/95780.png" /> 1号店</a><span class="myins-like-return">返</span></li>
+                <li><a href="" target="_blank"><img src="img/95537.png" /> 苏宁易购</a><span class="myins-like-return">返</span></li>
+                <li><a href="" target="_blank"><img src="img/95693.png" /> 唯品会</a><span class="myins-like-return">返</span></li>
+                <li><a href="" target="_blank"><img src="img/95517.png" /> 当当网</a><span class="myins-like-return">返</span></li>
+            </ul>
+            <ul class="myins-like">
+            	<li><a href="http://www.jikexueyuan.com/" target="_blank"><img src="img/200974.png" /> 极客学院</a></li>
+                <li><a href="http://www.imooc.com/" target="_blank"><img src="img/200066.png" /> 慕课网</a></li>
+                <li><a href="http://fanyi.youdao.com/" target="_blank"><img src="img/10603.png" /> 有道翻译</a></li>
+                <li><a href="http://www.taobao.com/" target="_blank"><img src="img/95487.png" /> 淘宝网</a></li>
+                <li><a href="http://www.iconfont.cn/" target="_blank"><img src="img/6000.png" /> iconfont</a></li>
+                <li><a href="http://www.dytt8.net/" target="_blank"><img src="img/95550.png" /> 电影天堂</a></li>
+            </ul>
+            <ul class="myins-like">
+            	<li><a href="http://www.bootcss.com/" target="_blank"><img src="img/6000.png" /> bootstrap</a></li>
+                <li><a href="http://www.jikexueyuan.com/blog/404.html" target="_blank"><img src="img/6000.png" /> 初级前端</a></li>
+                <li><a href="http://www.ccopyright.com.cn/" target="_blank"><img src="img/6000.png" /> 中国版权</a></li>
+                <li><a href="http://www.webhek.com/svg/" target="_blank"><img src="img/6000.png" /> SVG</a></li>
+                <li><a href="http://www.w3school.com.cn/sql/sql_orderby.asp" target="_blank"><img src="img/6000.png" /> SQL语句</a></li>
+                <li><a href="http://www.uimaker.com/uimakerdown/bstemplate/" target="_blank"><img src="img/81268.png" /> 后台模板</a></li>
+            </ul>
+            <ul class="myins-like">
+            	<li><a href="http://www.uimaker.com/uimakerdown/bstemplate/82645.html" target="_blank"><img src="img/81268.png" /> UI后台</a></li>
+                <li><a href="http://nodejs.org/" target="_blank"><img src="img/6000.png" /> nodejs</a></li>
+                <li><a href="http://www.cnblogs.com/mofish/archive/2012/05/23/2515218.html" target="_blank"><img src="img/7991.png" /> 响应式布局</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 我的导航内容 e -->
+        <!-- 视频内容 s -->
+        <div class="myvideo" id="d4" style="display:none">
+        	<div class="myvideo-content">
+            	<table cellspacing="14" valign="top">
+                	<tr>
+                    	<td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://v.pptv.com/show_page/9e8864e2ee.html?rcc_id=baiduchuisou" target="_blank">
+                        		<img src="img/u=3283964903,1242636900&fm=58.jpg" />
+                                <p>最强大脑</p>
+                        </a></td>
+                        <td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://www.iqiyi.com/a_19rrhbkfv1.html?vfm=2008_aldbd" target="_blank">
+                        		<img src="img/u=3385979957,1378941106&fm=58.jpg" />
+                                <p>葫芦兄弟</p>
+                        </a></td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlobayg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=3561038704,1407722854&fm=58.jpg" />
+                                <p>实拍协警紧急时刻拦车 身后地面瞬间塌陷</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlo89i8.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=1824276559,3473530135&fm=58.jpg"/>
+                                <p>武神赵子龙第38集预告</p>
+                        	</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrloacno.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=4045917276,1897302228&fm=58.jpg"/>
+                                <p>实拍牛头犬死咬哈士奇 旁人用棍打也不松口</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlp97fg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=2880041808,4110926158&fm=58.jpg"/>
+                                <p>东方红一号卫星珍贵视频首度曝光</p>
+                        	</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="myvideo-content">
+            	<table cellspacing="14" valign="top">
+                	<tr>
+                    	<td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://v.pptv.com/show_page/9e8864e2ee.html?rcc_id=baiduchuisou" target="_blank">
+                        		<img src="img/u=3283964903,1242636900&fm=58.jpg" />
+                                <p>最强大脑</p>
+                        </a></td>
+                        <td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://www.iqiyi.com/a_19rrhbkfv1.html?vfm=2008_aldbd" target="_blank">
+                        		<img src="img/u=3385979957,1378941106&fm=58.jpg" />
+                                <p>葫芦兄弟</p>
+                        </a></td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlobayg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=3561038704,1407722854&fm=58.jpg" />
+                                <p>实拍协警紧急时刻拦车 身后地面瞬间塌陷</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlo89i8.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=1824276559,3473530135&fm=58.jpg"/>
+                                <p>武神赵子龙第38集预告</p>
+                        	</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrloacno.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=4045917276,1897302228&fm=58.jpg"/>
+                                <p>实拍牛头犬死咬哈士奇 旁人用棍打也不松口</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlp97fg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=2880041808,4110926158&fm=58.jpg"/>
+                                <p>东方红一号卫星珍贵视频首度曝光</p>
+                        	</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="myvideo-content">
+            	<table cellspacing="14" valign="top">
+                	<tr>
+                    	<td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://v.pptv.com/show_page/9e8864e2ee.html?rcc_id=baiduchuisou" target="_blank">
+                        		<img src="img/u=3283964903,1242636900&fm=58.jpg" />
+                                <p>最强大脑</p>
+                        </a></td>
+                        <td rowspan="2" class="video-big" valign="top">
+                        	<a href="http://www.iqiyi.com/a_19rrhbkfv1.html?vfm=2008_aldbd" target="_blank">
+                        		<img src="img/u=3385979957,1378941106&fm=58.jpg" />
+                                <p>葫芦兄弟</p>
+                        </a></td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlobayg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=3561038704,1407722854&fm=58.jpg" />
+                                <p>实拍协警紧急时刻拦车 身后地面瞬间塌陷</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlo89i8.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=1824276559,3473530135&fm=58.jpg"/>
+                                <p>武神赵子龙第38集预告</p>
+                        	</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrloacno.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=4045917276,1897302228&fm=58.jpg"/>
+                                <p>实拍牛头犬死咬哈士奇 旁人用棍打也不松口</p>
+                        	</a>
+                        </td>
+                        <td valign="top">
+                        	<a href="http://www.iqiyi.com/v_19rrlp97fg.html?vfm=f_109_bdxs" target="_blank">
+                        		<img src="img/u=2880041808,4110926158&fm=58.jpg"/>
+                                <p>东方红一号卫星珍贵视频首度曝光</p>
+                        	</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 视频内容 e -->
+        <!-- 购物内容 s -->
+        <div class="myshop" id="d5" style="display:none">
+        	<div>
+            	<table cellspacing="15">
+                	<tr>
+                    	<td>
+                        	<a href="http://vip.baidu.com/p_29207?=&vip_frm=mhd_gouwu_xq" target="_blank">
+                            	<img src="img/810a19d8bc3eb1357c8ada3ba11ea8d3fc1f44e4.jpg" />
+                            	<div class="shop-bgimg">
+                            		<div class="shop-top">宾克运动棉护腕</div>
+                                	<div class="shop-bottom">百度返现 50%</div>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                        	<a href="http://vip.baidu.com/p_29270?=&vip_frm=mhd_gouwu_xq" target="_blank">
+                            	<img src="img/42a98226cffc1e170c2acdb14d90f603728de99d.jpg" />
+                            	<div class="shop-bgimg">
+                            		<div class="shop-top">宜蜂尚天然蜂蜜</div>
+                                	<div class="shop-bottom">百度返现 80%</div>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                        	<a href="http://vip.baidu.com/p_8551?=&vip_frm=mhd_gouwu_xq" target="_blank">
+                            	<img src="img/1e30e924b899a901e9901fb61a950a7b0308f58d.jpg" />
+                            	<div class="shop-bgimg">
+                            		<div class="shop-top">瑞歌入耳式通用耳机</div>
+                                	<div class="shop-bottom">百度返现 50%</div>
+                                </div>
+                            </a>
+                        </td>
+                        <td valign="top">
+                        	<div class="shop-toppart">
+                            	<a href="http://vip.baidu.com/act/xuyuan?=&vip_frm=mhd_gouwu_wzl" target="_blank">
+                            		<div class="shop-title">1元得iPhone SE</div>
+                                    <div class="shop-huise">其他超值商品 1元可得</div>
+                                    <div class="shop-lanse">去看看</div>
+                                </a>
+                            </div>
+                            <div class="shop-bottompart">
+                            	<a href="http://vip.baidu.com/mall?vip_frm=mhd_gouwu_sc" target="_blank">
+                            		<div class="shop-title">返利商城</div>
+                                    <div class="shop-huise">
+                                    	<table>
+                                        	<tr>
+                                            	<td><a href="http://vip.baidu.com/cps/show/goto?mallid=101&product_id=0&disable_goto_flag=0&url=8f5d%252BT%252BhOvsuxj%252B2JrmC6E3b%252BDQIn2jrwrtdzyA40xlcvIXfIyBUFdRK2lFFtg&sharekey=&statkey=zw_mhdgouwusc_m_101&vip_frm=mhd_gouwu_sc" target="_blank">京东商城</a></td>
+                                                <td><a href="http://vip.baidu.com/cps/show/goto?mallid=112&product_id=0&disable_goto_flag=0&url=928aX2tvcF5gmcW4jzwGnCWYxEz2XxBFWMcnodHI7rXlcVxIV4sJCaUBrysQU%252FpuGdI&sharekey=&statkey=zw_mhdgouwusc_m_112&vip_frm=mhd_gouwu_sc" target="_blank">百度糯米</a></td>
+                                            </tr>
+                                            <tr>
+                                            	<td><a href="http://vip.baidu.com/cps/show/goto?mallid=102&product_id=0&disable_goto_flag=0&url=e5020r2LwcEdQgI6afY67kDU1oAFtRgYTIbUfHP3pxHwgTPpfN11yTMrzU468QI&sharekey=&statkey=zw_mhdgouwusc_m_102&vip_frm=mhd_gouwu_sc" target="_blank">1号店</a></td>
+                                                <td><a href="http://vip.baidu.com/cps/show/goto?mallid=105&product_id=0&disable_goto_flag=0&url=6127fhfyz1s9HGnnCbnSOJkNosOVEGH4L9aI0JorGAozHds2yBht33dpbtF4TSOfcjN5mik&sharekey=&statkey=zw_mhdgouwusc_m_105&vip_frm=mhd_gouwu_sc" target="_blank">当当网</a></td>
+                                            </tr>
+                                            <tr>
+                                            	<td><a href="http://vip.baidu.com/cps/show/goto?mallid=151&product_id=0&disable_goto_flag=0&url=abaa8y%252FB5vdk25nsDyzjj%252F6aPqRlJaSVTlkHcQhuNhPbse9ghPLucT50DTM6Yg9h83UScw&sharekey=&statkey=zw_mhdgouwusc_m_151&vip_frm=mhd_gouwu_sc" target="_blank">蘑菇街</a></td>
+                                                <td><a href="http://vip.baidu.com/cps/show/goto?mallid=104&product_id=0&disable_goto_flag=0&url=6ea53oHn5x4R14LykqUs7fg880JtGQmWWLb8XsQ5h%25252BgeHC9xCYFPmtHV2fGAAu%25252Fm&sharekey=&statkey=zw_mhdgouwusc_m_104&vip_frm=mhd_gouwu_sc" target="_blank">唯品会</a></td>
+                                            </tr>
+                                            <tr>
+                                            	<td><a href="http://vip.baidu.com/cps/show/goto?mallid=478&product_id=0&disable_goto_flag=0&url=69a42t6qLfT5urJNK4YBEmUZNqtXbzLSXIzcoIOnibeVXJhFHWPDhecurQKSLbHc5rA&sharekey=&statkey=zw_mhdgouwusc_m_478&vip_frm=mhd_gouwu_sc" target="_blank">聚美优品</a></td>
+                                                <td><a href="http://s.click.taobao.com/t?e=m%3D2%26s%3DHB5mU5G%2BRAgcQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAmJkDPkG%2FdjAE6NybHI0aKBba5JcDTgiJNu9GNXBwzGwxvnXr2PDD5vDvBDdVSuDmqb6h%2BauVgdyCEDNGBpwx5jlSg55GVX5wbSqdkxH6LRFnaYpFBIfC%2F2orLd93QuCUMYOae24fhW0&vip_frm=mhd_gouwu_sc" target="_blank">聚划算</a></td>
+                                            </tr>
+                                            <tr>
+                                            	<td><a href="http://chaoshi.tmall.com/activity/hub.htm?t=baiduvip2&vip_frm=mhd_gouwu_sc" target="_blank">天猫超市</a></td>
+                                                <td><a href="http://vip.baidu.com/mall?=&vip_frm=mhd_gouwu_sc" target="_blank"  class="shop-lanse">更多</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 购物内容 e -->
+      </div>
+      <!-- 我的关注内容 e --> 
+      <!-- 切换详细内容 e --> 
+    </div>
+    <!-- 切换内容 e --> 
+  </div>
+  <!-- 内容 e --> 
+  <!-- 返回顶部 s --> 
+  <div class="fadein" id="backtop"><!--使用返回顶部方法-->
+  <i class="icon iconfont">&#xe607;</i>
+  </div>
+  <!-- 返回顶部 e -->
+  <!-- 底部 s -->
+  <footer>
+    <table>
+      <tr>
+        <td><a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为首页</a></td>
+        <td><a href="http://home.baidu.com/" target="_self">关于百度</a></td>
+        <td><a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile" target="_self">About Baidu</a></td>
+      </tr>
+      <tr>
+        <td colspan="3">©2016 Baidu<a href="http://www.baidu.com/duty/" target="_self">使用百度前必读</a> <a href="http://jianyi.baidu.com/" target="_self">意见反馈</a>京ICP证030173号</td>
+      </tr>
+    </table>
+  </footer>
+  <!-- 底部 e --> 
+</div>
+<!-- PC端代码 e --> 
+<script data-main="js/main" src="js/require.js" type="text/javascript">
+</script> <!--引用require.js文件-->
+</body>
+</html>

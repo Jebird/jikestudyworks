@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 s */
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    height: 100%;
+    font-family: "微软雅黑", "宋体", "新宋体", "黑体";
+    background-color: #fff;
+}
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    text-align: center;
+}
+/* 初始化 e */
+
+/* 头部样式 s */
+header {
+    width: 100%;
+    padding: 0 10px;
+    background-color: #3E98F0;
+}
+header .header-padd {
+    border-bottom: 1px solid #5dabf0;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: url(../img/bg-news-logo.png) no-repeat;
+    background-position: center 6px;
+    background-size: 77px 25.5px;
+}
+header .header-padd .header-left {
+    position: absolute;
+    left: 0;
+}
+header .header-padd .header-left a {
+    display: block;
+    height: 45px;
+    width: 30px;
+    float: left;
+    margin-right: 10px;
+}
+header .header-padd .header-left {
+    float: left;
+}
+header .header-padd .header-left .left-first {
+    background: url(../img/baidu-news-bar.png) no-repeat;
+    background-position: center 4px;
+    background-size: 40px 500px;
+}
+header .header-padd .header-left .left-user {
+    background: url(../img/baidu-news-bar.png) no-repeat;
+    background-position: center -463px;
+    background-size: 40px 500px;
+}
+header .header-padd .header-right {
+    float: right;
+}
+header .header-padd .header-right a {
+    float: right;
+    display: block;
+    height: 45px;
+    width: 30px;
+    margin-left: 10px;
+}
+header .header-padd .header-right .right-search {
+    background: url(../img/baidu-news-bar.png) no-repeat;
+    background-position: center -162px;
+    background-size: 40px 500px;
+}
+header .header-padd .header-right .right-creat {
+    background: url(../img/baidu-news-bar.png) no-repeat;
+    background-position: center -107px;
+    background-size: 40px 500px;
+}
+/* 头部样式 e */
+
+/* 内容样式 s */
+.content .title {
+    padding: 10px 0;
+    background-color: #3E98F0;
+    height: 50px;
+    width: 100%;
+}
+.content .title .active {
+    border-bottom: 1px solid #fff;
+}
+.content .title li {
+    float: left;
+    display: block;
+    padding-bottom: 10px;
+    width: 16.6%;
+    font-size: 16px;
+}
+.content .title li>div {
+    width: 100%;
+    height: 30px;
+}
+.content .title li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-right: 1px solid #5dabf0;
+    text-decoration: none;
+}
+.news {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.news>div {
+    padding: 10px;
+}
+.news .on {
+    display: block;
+}
+/* 推荐内容样式 s */
+/* .banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .img {
+    width: 5000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner .img li {
+    float: left;
+}
+.banner .img li a {
+	display:block;
+	width:100%;
+	height:200px;}
+.banner .img li img {
+	height:inherit;}
+.banner .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size: 0px;
+}
+.banner .num li {
+    width: 35px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.banner .num li.on {
+    background: #35b558;
+}
+*/
+.news-content {
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+}
+.news-content .news-left {
+    float: left;
+}
+.news-content .news-left img {
+    height: 70px;
+    width: 90px;
+}
+.news-content .news-right {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    color: #b8bac0;
+}
+.news-content .news-right .news-title {
+    color: #262b31;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: -1px 0 8px 0;
+}
+.news-content .news-right .news-title {
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-content .news-right .news-second {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    padding-top: 2px;
+    color: #C0C0C0;
+    text-overflow: ellipsis;
+}
+.news-content .news-time {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #b8bac0;
+}
+.news-content .news-from {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    color: #fff;
+    background-color: #e02f2f;
+    border: 1px solid #e02f2f;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 2px;
+    margin-right: 10px;
+}
+/* 推荐内容样式 e */
+/* 内容样式 e */

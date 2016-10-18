@@ -1,0 +1,148 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+	min-height:550px;
+	min-width:550px;
+	position:relative;}
+/* 头部样式 s */
+.header {
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    padding: 18px;
+}
+a {
+    font-size: 13px;
+    padding: 7px;
+}
+.a1 {
+    color: #000;
+    font-weight: bold;
+}
+.a2 {
+    color: #000;
+    font-weight: 500;
+}
+.a1:hover,.a2:hover {
+    color: #00e;
+}
+.a3 {
+    font-size: 12px;
+    color: #FFF;
+    background-color: #38F;
+    text-decoration: none;
+}
+/* 头部样式 e */
+
+/* 内容样式 s */
+.content {
+    margin: 0 auto;
+    margin-top: 55px;
+    text-align: center;
+    height: 200px;
+    width: 643px;
+}
+.content img {
+    width: 270px;
+    height: 129px;
+}
+.content div {
+    margin-top: 20px;
+}
+.text {
+    height: 34px;
+    width: 530px;
+    float: left;
+    margin-right: -1px;
+	background:#fff;
+	border:1px solid #b6b6b6;
+	border-bottom-color:#bcbcbc;
+	padding-left:10px;
+}
+.text:hover {
+    height: 34px;
+    width: 530px;
+    float: left;
+    margin-right: -1px;
+	background:#fff;
+	border:1px solid #949494;
+	border-bottom-color:#bcbcbc;
+	padding-left:10px;
+}
+.text:focus {
+	border:1px solid #39F;
+	height: 34px;
+    width: 530px;
+    float: left;
+    margin-right: -1px;
+	background:#fff;
+	outline:medium;}
+.button {
+    height: 36px;
+    width: 100px;
+    font-size: 15px;
+    float: left;
+    color: #FFF;
+    background-color: #3385FF;
+    border: 1px solid #3385FF;
+}
+.button:hover {
+	background-color:#317ef3;
+	border-bottom:1px solid #2868c8;
+	box-shadow:1px 1px 1px #ccc;
+	cursor:pointer;}
+/* 内容样式 e */
+
+/* 底部样式 s */
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 650px;
+    height: 60px;
+}
+.left ,.left-p,.left-img {
+    float: left;
+}
+.left img {
+    height: 60px;
+    width: 60px;
+}
+.left-p div {
+    margin: 0px 10px;
+    font-size: 12px;
+}
+.left-p1 {
+    font-weight: 800;
+    padding: 10px 20px 5px 0px;
+}
+.left-p2 {
+    color: #9A9A9A;
+    padding: 5px 20px 10px 0px;
+}
+
+.right {
+    float: right;
+}
+.right-a {
+    padding: 5px 0px;
+}
+.right-a a {
+    color: #535353;
+}
+.right-p {
+    font-size: 12px;
+    height: 60px;
+    color: #7B7B7B;
+    padding: 5px 0px;
+}
+.right-p a {
+    color: #7B7B7B;
+}
+/* 底部样式 e */

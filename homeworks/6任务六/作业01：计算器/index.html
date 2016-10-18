@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>作业:计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <!--[if lt IE 9]>
+	<script src="js/style.js"></script>
+	<![endif]-->   
+</head>
+<body>
+  <div class="wrapper">
+  	<div class="counter">
+    	<input type="text" id="numShow">
+        <table cellspacing="10px">
+        	<tr>
+              <td class="td-img">
+                <img src="img/jikexueyuan.png" alt="极客学院" height="20px"/>
+              </td>
+              <td class="color-org" onClick="del()">退位</td>
+              <td class="color-org" onClick="cle()">清屏</td>
+              <td class="color-spe" onClick="opp()">+/-</td>
+              <td class="color-spe" onClick="tan()">tan</td>
+            </tr>
+            <tr>
+              <td class="color-num" onClick="getNum(7)">7</td>
+              <td class="color-num" onClick="getNum(8)">8</td>
+              <td class="color-num" onClick="getNum(9)">9</td>
+              <td class="color-ope" onClick="div()">/</td>
+              <td class="color-spe" onClick="cos()">cos</td>
+            </tr>
+            <tr>
+              <td class="color-num" onClick="getNum(4)">4</td>
+              <td class="color-num" onClick="getNum(5)">5</td>
+              <td class="color-num" onClick="getNum(6)">6</td>
+              <td class="color-ope" onClick="mul()">*</td>
+              <td class="color-spe" onClick="sin()">sin</td>
+            </tr>
+            <tr>
+              <td class="color-num" onClick="getNum(1)">1</td>
+              <td class="color-num" onClick="getNum(2)">2</td>
+              <td class="color-num" onClick="getNum(3)">3</td>
+              <td class="color-ope" onClick="sub()">-</td>
+              <td rowspan="2" class="color-spe" onClick="equ()">=</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="color-num width-double" onClick="getNum(0)">0</td><!--宽度加倍-->
+              <td class="color-num" onClick="poi()">.</td>
+              <td class="color-ope" onClick="add()">+</td>
+            </tr>
+        </table>
+        <script src="js/style.js" type="text/javascript"></script><!--引用外部js文件-->
+    </div>
+  </div>
+</body>
+
+</html>

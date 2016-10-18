@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>百度新闻后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <!-- 导航条 可以参照boostrap官网-->
+    <<nav class="navbar navbar-inverse navbar-fixed-top ama-header">
+    <div class="container">
+      <div class="navbar-header">
+        <h2 class="pull-left">
+          <span class="orange">BAIDU.</span>
+          <span class="white">ADMIN</span>
+        </h2> <i class="pull-left">百度新闻后台管理系统</i>
+      </div>
+    </div>
+  </nav>
+    <!-- 栅格系统 -->
+    <div class="container-fluid margin-top-50">
+        <div class="row">
+            <!-- 左侧的导航栏 -->
+            <div class="col-md-2">
+                <ul id="main-nav" class="main-nav nav nav-tabs nav-stacked" style="">
+                    <li>
+                        <a href="#systemSetting" class="nav-header collapsed nav-news-title" data-toggle="collapse">新闻类别
+
+                        </a>
+                        <ul id="systemSetting" class="nav nav-list secondmenu " style="height: 0px;">
+                            <li class="click-data" value="recom"><a href="#">推荐</a></li>
+                            <li class="click-data" value="baijia"><a href="#">百家</a></li>
+                            <li class="click-data" value="local"><a href="#">本地</a></li>
+                            <li class="click-data" value="img"><a href="#">图片</a></li>
+                            <li class="click-data" value="fun"><a href="#">娱乐</a></li>
+                            <li class="click-data" value="society"><a href="#">社会</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧表格系统 -->
+            <div class="col-md-10">
+                <h4 id="location">新闻列表</h4>
+                <input type='button' id="addBtn-face" class='float-right btn btn-info' value='添加新闻'>
+                <div class="location-eng">NEWS LISTS</div>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>新闻标题</th>
+                            <th>发布时间</th>
+                            <th>新闻图片</th>
+                            <th>新闻简介</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 修改新闻弹出 -->
+        <div id="modify">
+            <p id="mdfInfo">请修改信息</p>
+            <h5>新闻标题：</h5>
+            <input type='text'  id="mdfTitle" class='full-width' name='mdfTitle'>
+            <h5>新闻简介：</h5>
+            <input type='text'  id="mdfSub" class='full-width' name='mdfSub'>
+            <h5>图片路径：</h5>
+            <input type='text'  id="mdfImg" class='full-width' name='mdfImg'>
+            <h5>新闻内容：</h5>
+            <textarea   id="mdfCon" class='full-width news-content'></textarea>
+            <input  id="mdfTime" type='date' name='mdfTime'>
+            <input type='button' id="mdfUpDate" class='float-right btn btn-info' value='保存'>
+            <input type='button' id="mdfHide" class='float-right btn btn-info' value='取消'>
+        </div>
+        <!-- 删除新闻弹出 -->
+        <div id="delete">
+            <label id="info"></label>
+            <input type='button' id="deleteBtn" class='btn btn-btn-info' value='确定'>
+            <input type='button' id="cancelBtn" class='btn btn-info' value='取消'>
+        </div>
+        <!-- 添加新闻弹出 -->
+        <div id="add">
+            <h5>新闻标题：</h5>
+            <input type='text' class='full-width' id="newsTitle">
+            <h5>新闻简介：</h5>
+            <input type='text' class='full-width' id="subTitle">
+            <h5>图片路径：</h5>
+            <input type='text' class='full-width' id="newImg">
+            <h5>新闻内容：</h5>
+            <textarea class='full-width news-content' id='newsContent'></textarea>
+            <input type='date'  id="addTime">
+            <label id="addInfo">输入信息</label>
+            <input type='button' id="addSave" class='float-right btn btn-info'value='保存'>
+            <input type='button' id="addCancel" class='float-right btn btn-info' value='取消'>
+        </div>
+    </div>
+    <script type="text/javascript" src="./javascripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascripts/index.js"></script>
+</body>
+
+</html>

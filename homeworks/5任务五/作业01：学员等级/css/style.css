@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 初始化 */
+html,body {
+    margin: 0;
+    padding: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.wrapper {
+    position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto auto;
+	height:400px;
+	width:400px;
+	text-align:center;
+}
+.wrapper input {
+	height:20px;
+	outline:none;
+}
+.wrapper button {
+	margin-left:-10px;
+	height:26px;
+	color:#fff;
+	background-color:#F00;
+	border:1px solid #f00;
+	outline:none;
+}
+.wrapper p span{
+	color:#F00;
+	font-size:18px;
+}

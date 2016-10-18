@@ -1,0 +1,92 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+h3{
+	margin:20px;}
+hr {
+	margin:10px;}
+/* 标准盒模型与怪异盒模型对比 s */
+.box {display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	}
+.standard {
+	border:20px solid #FF3333;
+	margin:50px;
+	padding:10px;
+	width:200px;
+	height:200px;}
+.standard-son{
+	height:200px;
+	width:200px;
+	background-color:#3F3;
+	text-align:center;}
+.weird {
+	border:20px solid #FF3333;
+	margin:50px;
+	padding:10px;
+	width:260px;
+	height:260px;
+	box-sizing:border-box;}
+.weird-son{
+	height:200px;
+	width:200px;
+	background-color:#CF0;
+	text-align:center;}
+/* 标准盒模型与怪异盒模型对比 e */	
+
+	
+/* 弹性盒模型分栏 s */
+.col {
+	-webkit-column-count:3;
+	-webkit-column-rule-style:dotted;
+	-webkit-column-gap:50px;}
+.col img {
+	height:150px;}
+/* 弹性盒模型分栏 e */	
+
+/* 弹性盒（新）模型分栏排序 s */
+.con {
+	display:-webkit-flex;
+	-webkit-flex-pack:center;
+	-webkit-flex-align:center;
+	-webkit-flex-flow:column nowrap;
+	width:600px;
+	height:600px;
+	background:#60F;
+	}
+
+.first {
+	height:100px;
+	width:400px;
+	-webkit-flex:1;
+	background-color:#F36;}
+.second {
+	height:100px;
+	width:400px;
+	-webkit-flex:1;
+	background-color:#9F3;
+	-webkit-order:-1;}
+.third {
+	height:200px;
+	width:500px;
+	-webkit-flex:1;
+	background-color:#903;}
+/* 弹性盒（新）模型分栏排序 e */
+
+/* 弹性盒（新）模型分栏排序 s */
+.center {
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	height:300px;
+	width:300px;
+	background-color:#FF9;}
+.center img {
+	width:150px;}	
+/* 弹性盒子(旧)居中布局： e */
+
+
+

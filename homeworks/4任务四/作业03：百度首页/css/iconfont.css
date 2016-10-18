@@ -1,0 +1,52 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon{
+  font-size: 24px;
+  color:#333;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s;}
+  
+.icon-baidu:before { content: "\e600"; }
+.icon-chevron-down:before { content: "\e601"; }
+.icon-yonghu:before { content: "\e602"; }
+.icon-jiudian:before { content: "\e614"; }
+.icon-ktv:before { content: "\e615"; }
+.icon-meishi:before { content: "\e616"; }
+.icon-video:before { content: "\e603"; }
+.icon-xinwen:before { content: "\e604"; }
+.icon-tubiao1shuxiaoshuo:before { content: "\e605"; }
+.icon-shuaxin:before { content: "\e606"; }
+.icon-duoyun:before { content: "\e613"; }
+.icon-dianying:before { content: "\e617"; }
+.icon-kuaidedache:before { content: "\e618"; }
+.icon-waimai:before { content: "\e619"; }
+.icon-icon:before { content: "\e61a"; }
+.icon-gengduo:before { content: "\e607"; }
+.icon-yuyinxuanzhong:before { content: "\e608"; }
+.icon-nuo:before { content: "\e609"; }
+.icon-dingwei:before { content: "\e60a"; }
+.icon-iconhot:before { content: "\e60b"; }
+.icon-tianjia:before { content: "\e60c"; }
+.icon-ditu-copy:before { content: "\e60d"; }
+.icon-iconpingtainuomi01:before { content: "\e61b"; }
+.icon-jzxx:before { content: "\e60e"; }
+.icon-yijianfankui:before { content: "\e60f"; }
+.icon-tianjia2-copy:before { content: "\e610"; }
+.icon-iconfont39-copy:before { content: "\e611"; }
+.icon-xiangyou-copy:before { content: "\e612"; }

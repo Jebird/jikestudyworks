@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+header .header-logo span:hover {
+	background-color:#F00;
+	border:1px solid #F00;}
+header .header-tab .innovate {
+	border-top:2px solid #F00;}
+header .header-tab .innovate i{
+	color:#F00;}	
+header .header-tab .innovate span {
+	color:#F00;}
+.hao-body .title {
+	border-top:2px solid #F00;}
+.hao-body .title .title-left a {
+	color:#F00;}
+.hao-body .title .title-left .left-active {
+	background-color:#F00;}
+.hao-body .content-left	.bgimg p {
+	background-color:#F00;}
+.hao-body .content-right .recom ul .weight {
+	color:#F00;}

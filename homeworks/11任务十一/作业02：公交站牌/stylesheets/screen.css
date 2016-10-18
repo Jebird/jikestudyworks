@@ -1,0 +1,186 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 17, ../sass/screen.scss */
+.main {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  margin-top: -125px;
+  left: 50%;
+  margin-left: -250px;
+  border: 1px solid #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 10px 5px #ccc;
+  -webkit-box-shadow: 0 0 10px 5px #ccc;
+  box-shadow: 0 0 10px 5px #ccc;
+}
+
+/* line 30, ../sass/screen.scss */
+.top-left {
+  float: left;
+  margin-top: 20px;
+}
+/* line 33, ../sass/screen.scss */
+.top-left .bus-name {
+  background-color: #9B4843;
+  font-size: 36px;
+  text-align: center;
+  height: 50px;
+  width: 130px;
+  line-height: 50px;
+  color: #fff;
+}
+/* line 42, ../sass/screen.scss */
+.top-left .bus-time {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* line 47, ../sass/screen.scss */
+.top-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  text-align: center;
+}
+/* line 52, ../sass/screen.scss */
+.top-right .road-section {
+  font-size: 16px;
+  color: #028b5f;
+}
+/* line 56, ../sass/screen.scss */
+.top-right .road-english {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #028b5f;
+}
+/* line 61, ../sass/screen.scss */
+.top-right .road-now {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #EA0000;
+}
+
+/* line 69, ../sass/screen.scss */
+.middle {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  padding-top: 10px;
+  margin-top: 90px;
+  background-color: #406b4b;
+  color: #fff;
+}
+/* line 76, ../sass/screen.scss */
+.middle ul {
+  width: 500px;
+  height: 95px;
+  padding-left: 3px;
+  font-size: 14px;
+}
+/* line 81, ../sass/screen.scss */
+.middle ul li {
+  width: 20px;
+  float: left;
+  margin-left: 0.8px;
+}
+/* line 86, ../sass/screen.scss */
+.middle ul .choise {
+  color: #EA0000;
+}
+
+/* line 91, ../sass/screen.scss */
+.bottom {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+/* line 95, ../sass/screen.scss */
+.bottom .vote {
+  padding: 10px 0 5px 0;
+  width: 400px;
+  margin-left: 40px;
+  border-bottom: 3px solid #EA0000;
+}
+/* line 101, ../sass/screen.scss */
+.bottom .triangle {
+  position: absolute;
+  top: 24px;
+  right: 45px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 8px solid #EA0000;
+}

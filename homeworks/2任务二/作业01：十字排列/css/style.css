@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*自适应居中显示 s */
+.content {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+/*自适应居中显示 e */
+
+.content div {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.beibei {
+    margin: 0px 107px 5px 107px;
+    border: #1B4379 1px solid;
+    box-shadow: 0px 0px 10px 0px #1B4379;
+}
+.jingjing {
+    border: #EF8806 1px solid;
+    margin-right: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+.huanhuan {
+    text-align: center;
+    line-height: 100px;
+    border: #FF0000 1px solid;
+    box-shadow: 0px 0px 10px 0px #FF0000;
+}
+
+/*中间图片24*24尺寸 s */
+.huanhuan img {
+    height: 24px;
+    width: 24px;
+}
+/*中间图片24*24尺寸 e */
+
+.yingying {
+    border: #EF8806 1px solid;
+    margin-left: 5px;
+    box-shadow: 0px 0px 10px 0px #EF8806;
+}
+.nini {
+    margin: 5px 107px 0px 107px;
+    border: #016901 1px solid;
+    box-shadow: 0px 0px 10px 0px #016901;
+}

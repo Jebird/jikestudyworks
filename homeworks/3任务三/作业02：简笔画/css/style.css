@@ -1,0 +1,681 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    height: 460px;
+    width: 370px;
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+}
+
+/* 头部样式 s */
+.head {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #037DEA;
+    width: 308px;
+    height: 308px;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+    z-index: 1;
+}
+.head .face {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+    margin: 0 auto;
+    background-color: #FFF;
+    width: 270px;
+    height: 270px;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+    z-index: 3;
+}
+.head .eye-left {
+    position: absolute;
+    top: 25px;
+    left: 88px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+    z-index: 9;
+}
+
+.head .eye-left-ball {
+    -webkit-animation: shake 3s .2s infinite ease both;
+    -moz-animation: shake 3s .2s infinite ease both;
+}
+
+@-webkit-keyframes shake {
+    0%,100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -webkit-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-moz-keyframes shake {
+    0%,100% {
+        -moz-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -moz-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -moz-transform: translateX(10px);
+    }
+}
+
+
+.head .eye-right {
+    position: absolute;
+    top: 25px;
+    right: 88px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+    z-index: 9;
+}
+.head .eye-left .eye-left-ball {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50% 50%;
+}
+.head .eye-left .eye-left-ball .eye-left-ball-white {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    height: 5px;
+    width: 5px;
+    background-color: #FFF;
+    border-radius: 50% 50%;
+}
+.head .eye-right .eye-right-ball {
+    -webkit-animation: tada 1s .2s infinite ease both;
+    -moz-animation: tada 1s .2s infinite ease both;
+}
+
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    
+    10%,20% {
+        -webkit-transform: scale(0.9) rotate(-3deg)
+    }
+    
+    30%,50%,70%,90% {
+        -webkit-transform: scale(1.1) rotate(3deg)
+    }
+    
+    40%,60%,80% {
+        -webkit-transform: scale(1.1) rotate(-3deg)
+    }
+    
+    100% {
+        -webkit-transform: scale(1) rotate(0)
+    }
+}
+
+@-moz-keyframes tada {
+    0% {
+        -moz-transform: scale(1)
+    }
+    
+    10%,20% {
+        -moz-transform: scale(0.9) rotate(-3deg)
+    }
+    
+    30%,50%,70%,90% {
+        -moz-transform: scale(1.1) rotate(3deg)
+    }
+    
+    40%,60%,80% {
+        -moz-transform: scale(1.1) rotate(-3deg)
+    }
+    
+    100% {
+        -moz-transform: scale(1) rotate(0)
+    }
+}
+.head .eye-right .eye-right-ball {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50% 50%;
+}
+.head .eye-right .eye-right-ball .eye-right-ball-white {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    height: 5px;
+    width: 5px;
+    background-color: #FFF;
+    border-radius: 50% 50%;
+}
+.head .face .nose {
+    position: absolute;
+    top: 26px;
+    left: 111px;
+    background-color: #F00;
+    height: 30px;
+    width: 40px;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+    z-index: 10;
+}
+.head .face .mousetop {
+    position: absolute;
+    top: 56px;
+    left: 15px;
+    width: 235px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+    background-color: #fff;
+    z-index: 6;
+}
+.head .face .mousetop-white {
+    position: absolute;
+    top: 45px;
+    left: 46px;
+    height: 30px;
+    width: 177px;
+    background-color: #FFF;
+    z-index: 7;
+}
+.head .face .mousetop-line {
+    position: absolute;
+    top: 58px;
+    left: 133px;
+    height: 60px;
+    width: 2px;
+    background-color: #000;
+    z-index: 9;
+}
+.head .baffi-left {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: transparent;
+    width: 110px;
+    height: 90px;
+    z-index: 7;
+}
+.head .baffi-left-line1 {
+    position: absolute;
+    top: 100px;
+    left: 14px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    z-index: 9;
+}
+.head .baffi-left-line2 {
+    position: absolute;
+    top: 125px;
+    left: 5px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    z-index: 9;
+}
+.head .baffi-left-line3 {
+    position: absolute;
+    top: 150px;
+    left: 14px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    z-index: 9;
+}
+.head .baffi-right {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: transparent;
+    width: 110px;
+    height: 90px;
+    z-index: 9;
+}
+.head .baffi-right-line1 {
+    position: absolute;
+    top: 100px;
+    right: 14px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    z-index: 9;
+}
+.head .baffi-right-line2 {
+    position: absolute;
+    top: 125px;
+    right: 5px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    z-index: 9;
+}
+.head .baffi-right-line3 {
+    position: absolute;
+    top: 150px;
+    right: 12px;
+    height: 2px;
+    width: 95px;
+    background-color: #1B2025;
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    z-index: 9;
+}
+.head .face .mouseside-write {
+    position: absolute;
+    top: 30px;
+    left: 26px;
+    width: 218px;
+    height: 45px;
+    background-color: #FFF;
+    border-top-left-radius: 20% 90%;
+    border-top-right-radius: 20% 90%;
+    z-index: 5;
+}
+.head .face .mouseside1 {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 220px;
+    height: 140px;
+    background-color: #EC1E00;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 10% 90%;
+    border-bottom-right-radius: 10% 90%;
+    z-index: 4;
+}
+.head .face .mouseside2 {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 210px;
+    height: 160px;
+    background-color: #EC1E00;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    z-index: 3;
+}
+.head .face .mousein {
+    position: absolute;
+    top: 165px;
+    left: 86px;
+    width: 100px;
+    height: 40px;
+    background-color: #F37F04;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    z-index: 5;
+}
+.head .face .mousein .mousein1 {
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    border-radius: 50% 50%;
+    background-color: #F37F04;
+    z-index: 7;
+}
+.head .face .mousein .mousein2 {
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 30px;
+    border-radius: 50% 50%;
+    background-color: #F37F04;
+    z-index: 7;
+}
+.head .face .mousein .mousein4 {
+    position: absolute;
+    width: 110px;
+    height: 12px;
+    background-color: #EC1E00;
+    z-index: 6;
+}
+.head .tie1 {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    width: 247px;
+    height: 80px;
+    background-color: transparent;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border: 2px solid #000;
+    border-top: transparent;
+    z-index: 4;
+}
+.head .tie2 {
+    position: absolute;
+    top: 230px;
+    left: 54px;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border: 2px solid #000;
+    border-top: transparent;
+    z-index: 3;
+}
+/* 头部样式 e */
+
+/* 身体样式 s */
+.body .body-left {
+    position: absolute;
+    top: 250px;
+    left: 90px;
+    height: 170px;
+    width: 120px;
+    background-color: #037DEA;
+    border-top-left-radius: 20% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 40% 50%;
+    border-bottom-right-radius: 40% 50%;
+    border: 2px solid #000;
+}
+.body .body-right {
+    position: absolute;
+    top: 250px;
+    right: 90px;
+    height: 170px;
+    width: 120px;
+    background-color: #037DEA;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 20% 50%;
+    border-bottom-left-radius: 40% 50%;
+    border-bottom-right-radius: 40% 50%;
+    border: 2px solid #000;
+}
+.body .body-write {
+    position: absolute;
+    top: 310px;
+    left: 110px;
+    width: 150px;
+    height: 100px;
+    border-radius: 45% 45%;
+    background-color: #FFF;
+    border: 2px solid #000;
+}
+.body .body-write .body-write-pocket {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 120px;
+    height: 94px;
+    border: 2px solid #000;
+    border-top: transparent;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+}
+.body .body-write .body-write-line {
+    position: absolute;
+    bottom: 57px;
+    left: 10px;
+    width: 120px;
+    height: 0px;
+    border: 1px solid #000;
+}
+.body .body-write .body-write-left {
+    position: absolute;
+    top: 3px;
+    left: 15px;
+    height: 41px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+.body .body-write .body-write-right {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    height: 41px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    -moz-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+/* 身体样式 e */
+
+/* 手部样式 s */
+.hander .hander-left {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    height: 45px;
+    width: 90px;
+    background-color: #037DEA;
+    border: 2px solid #000;
+    border-radius: 40% 40%;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    z-index: -3;
+}
+.hander .hander-left-ball {
+    position: absolute;
+    top: 240px;
+    left: 2px;
+    height: 65px;
+    width: 65px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+}
+.hander {
+    -webkit-animation: bounce 1s .2s infinite ease both;
+    -moz-animation: bounce 1s .2s infinite ease both;
+}
+
+@-webkit-keyframes bounce {
+    0%,20%,50%,80%,100% {
+        -webkit-transform: translateY(0)
+    }
+    
+    40% {
+        -webkit-transform: translateY(-30px)
+    }
+    
+    60% {
+        -webkit-transform: translateY(-15px)
+    }
+}
+
+@-moz-keyframes bounce {
+    0%,20%,50%,80%,100% {
+        -moz-transform: translateY(0)
+    }
+    
+    40% {
+        -moz-transform: translateY(-30px)
+    }
+    
+    60% {
+        -moz-transform: translateY(-15px)
+    }
+}
+
+
+.hander .hander-right {
+    position: absolute;
+    top: 280px;
+    right: 30px;
+    height: 45px;
+    width: 90px;
+    background-color: #037DEA;
+    border: 2px solid #000;
+    border-radius: 40% 40%;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    z-index: -3;
+}
+.hander .hander-right-ball {
+    position: absolute;
+    top: 295px;
+    right: 2px;
+    height: 65px;
+    width: 65px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50% 50%;
+}
+/* 手部样式 e */
+
+/* 脚部样式 s */
+.footer .footer-left {
+    position: absolute;
+    top: 405px;
+    left: 92px;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    z-index: -4;
+}
+.footer .footer-left {
+    -webkit-animation: shake 1s .2s infinite ease both;
+    -moz-animation: shake 1s .2s infinite ease both;
+}
+
+@-webkit-keyframes shake {
+    0%,100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -webkit-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-moz-keyframes shake {
+    0%,100% {
+        -moz-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -moz-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -moz-transform: translateX(10px);
+    }
+}
+.footer .footer-right {
+    position: absolute;
+    top: 405px;
+    right: 92px;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    z-index: -4;
+}
+.footer .footer-right {
+    -webkit-animation: shake 1s .2s infinite ease both;
+    -moz-animation: shake 1s .2s infinite ease both;
+}
+
+@-webkit-keyframes shake {
+    0%,100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -webkit-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-moz-keyframes shake {
+    0%,100% {
+        -moz-transform: translateX(0);
+    }
+
+    10%,30%,50%,70%, 90% {
+        -moz-transform: translateX(-10px);
+    }
+
+    20%,40%,60%,80% {
+        -moz-transform: translateX(10px);
+    }
+}
+
+/* 脚部样式 e */

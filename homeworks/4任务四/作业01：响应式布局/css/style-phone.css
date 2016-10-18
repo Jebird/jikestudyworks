@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化样式 s*/
+body {
+	margin:0;
+	padding:0;
+	background-color:#FFF;}
+.wrapper {
+	margin:0 10px;}
+/*初始化样式 e*/
+
+/*头部样式 s*/
+header {
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #C5C5C9;}
+header .header-left{
+	float:left;}
+header .header-left .title-on {
+	padding:10px;
+	color:#FFF;
+	background-color:#000;
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;}
+header .header-right{
+	float:right;
+	padding-top:3px;}
+header .header-right img {
+	height:25px;
+	border-style:none;/*IE8 以下去除图片默认边框*/}
+header .header-right a {
+	padding:20px;
+	text-decoration:none;}
+header .header-right .header-menu {
+	background-color:#606060;
+	padding:16px 0 10px 12px;
+	text-align:center;}
+header .header-right .header-menu img {
+	padding-right:12px;
+	height:18px;}
+/*头部样式 e*/
+
+/*内容样式 s*/
+.content .slogan {
+	text-align:center;}
+.content .slogan h1 {
+	font:Tahoma;
+	font-size:60px;}
+.content .slogan p {
+	margin-top:-30px;
+	font-size:18px;
+	font:Georgia;
+	color:#606060;
+	font-style:italic;/*斜体*/}
+.content .figure {
+	width:100%;
+	padding-top:10px;
+	text-align:center;}
+.content .figure div {
+	width:100%;
+	color:#fff;}
+.content .figure .figure-div1 {
+	background-color:rgb(118,118,118);
+	height:240px;}
+.content .figure .figure-div1 .div-p1 {
+	padding:90px 0 10px;
+	font-size:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:600;}
+.content .figure .figure-div1 .div-p2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	font-style:italic;}
+.content .figure .figure-div2,.figure-div4 {
+	background-color:#606060;
+	height:160px;}
+.content .figure .figure-div2 .div-p1 {
+	padding:40px 0 10px;
+	font-size:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:600;}
+.content .figure .figure-div2 .div-p2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	font-style:italic;}
+.content .figure .figure-div3 {
+	background-color:rgb(130,130,130);
+	height:240px;}
+.content .figure .figure-div3 .div-p1 {
+	padding:90px 0 10px;
+	font-size:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:600;}
+.content .figure .figure-div3 .div-p2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	font-style:italic;}
+.content .figure .figure-div4 .div-p1 {
+	padding:55px 0 10px;
+	font-size:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:600;}
+.content .figure .figure-div4 .div-p2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	font-style:italic;}
+
+.content .sign {
+	padding:50px 0;
+	text-align:center;}
+.content .sign h1{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:36px;
+	font-weight:normal;}
+.content .sign p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	font-style:italic;
+	color:#606060;
+	margin-top:-15px;}
+.content .sign .add {
+	padding:20px 0;}
+.content .sign .add input,.content .sign .add input:focus {
+	height:46px;
+	line-height:50px;
+	padding-left:10px;
+	font-style:italic;
+	width:70%;
+	border:1px solid #B0B0B0;
+	outline:0;/*去除输入框点击时外边框*/}
+.content .sign .add button,.content .sign .add button:focus {
+	height:50px;
+	width:20%;
+	min-width:40px;
+	margin-left:-10px;
+	color:#fff;
+	background-color:#F68236;
+	border:1px solid #F68236;
+	cursor:pointer;
+	outline:0;/*去除按钮点击时外边框*/}
+	/*广告切换样式 s*/
+.content .ad {
+	margin-bottom:75px;
+	height:200px;
+	background-color:#BBB;}
+	/*广告切换样式 e*/
+/*内容样式 e*/
+
+/*脚部样式 s*/
+footer{
+	padding:50px 0;
+	border-top:1px solid #e5e5e5;}
+footer>div {
+	float:left;
+	width:100%;
+	height:200px;
+	text-align:center;}
+footer div h2 {
+	font-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;}
+footer div img {
+	margin-top:10px;
+	padding:5px;
+	height:15px;
+	background-color:#606060;}
+footer div .img2 {
+	padding:5px 10px;}
+/*脚部样式 e*/
